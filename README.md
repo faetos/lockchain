@@ -3,19 +3,19 @@ Lock Chain Core repository
 
 [![Build Status](https://travis-ci.org/LytixChain/lytix.png)](https://travis-ci.org/LytixChain/lytix) [![GitHub tag](https://img.shields.io/github/tag/LytixChain/lytix.svg)](https://github.com/lytixchain/lytix/tree/v1.1.4)
 
-Lytix is an open source crypto-currency focused on fast private transactions with low transaction fees & low confirmations.  It is currently in production. We are in our Proof of Stake phase.  The base Maxnode system is in place and we are currently working on the data insertion utility.
+Lock Chain is an open source crypto-currency focused on fast private transactions with low transaction fees & low confirmations.  It is currently in develpment as a proof of concept. 
 
 ------------------------
 
-Proof of Stake is the current Lytix mechanism for obtaining coins outside of buying directly on an exchange
+Initial test on mining
 
 20,000 LCKC for Masternodes
 
-100,000 LYTX for Maxnodes
+80,000 LCKC for Maxnodes
 
 Reward breakdown -  40% Masternodes. 30% Maxnodes, 25% Stakers, and 5% Dev fee in the current release
 
-30 LYTX reward until 100,000
+10 LCKC reward until 250,000
 - 100 until 110,000
 - 30 until 300,000
 - 15 until 350,000
@@ -25,8 +25,8 @@ Reward breakdown -  40% Masternodes. 30% Maxnodes, 25% Stakers, and 5% Dev fee i
 - 3 until 1,750,000
 - 1 from then on 
 
-15 confirmations maturity for mined or staked rewards
-ZeroCoin has been removed from the wallet and is in maitnenance mode on Mainnet
+30 confirmations maturity for mined or staked rewards
+
 
 -------------------------
 
