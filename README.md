@@ -13,16 +13,13 @@ Initial test on mining
 
 80,000 LCKC for Maxnodes
 
-Reward breakdown -  40% Masternodes. 30% Maxnodes, 25% Stakers, and 5% Dev fee in the current release
+Reward breakdown -  40% Masternodes. 30% Maxnodes, 25% Stakers, and 5% Dev fee
 
-10 LCKC reward until 250,000
-- 100 until 110,000
-- 30 until 300,000
-- 15 until 350,000
-- 10 until 700,000
-- 7 until 1,050,000
-- 5 until 1,400,000
-- 3 until 1,750,000
+10 LCKC reward until 500,000
+- 8 until 1,000,000
+- 6 until 2,000,000
+- 4 until 3,000,000
+- 2 until 4,000,000
 - 1 from then on 
 
 30 confirmations maturity for mined or staked rewards
