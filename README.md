@@ -32,10 +32,4 @@ ZeroCoin has been removed from the wallet and is in maitnenance mode on Mainnet
 
 Other Information
 
-- Website - http://www.lytixchain.org
-- Block Explorer 1 - http://explorer.lytixchain.org
-- Twitter - https://twitter.com/ChainLytix
-- YouTube - https://www.youtube.com/channel/UCe9mVDCKp_xtH7tvN2Z17iA
-- Medium - https://medium.com/@faetoslytix
-- Exchange 1 - https://crex24.com/exchange/LYTX-BTC
-- Exchange 2 - bisq.network
+- Website - http://www.lockchain.org
