@@ -1,4 +1,4 @@
-Lytix Core repository
+Lock Chain Core repository
 =====================================
 
 [![Build Status](https://travis-ci.org/LytixChain/lytix.png)](https://travis-ci.org/LytixChain/lytix) [![GitHub tag](https://img.shields.io/github/tag/LytixChain/lytix.svg)](https://github.com/lytixchain/lytix/tree/v1.1.4)
@@ -9,7 +9,7 @@ Lytix is an open source crypto-currency focused on fast private transactions wit
 
 Proof of Stake is the current Lytix mechanism for obtaining coins outside of buying directly on an exchange
 
-5,000 LYTX for Masternodes
+20,000 LCKC for Masternodes
 
 100,000 LYTX for Maxnodes
 
