@@ -1,11 +1,11 @@
 Sample configuration files for:
 
 ```
-SystemD: lytixd.service
-Upstart: lytixd.conf
-OpenRC:  lytixd.openrc
-         lytixd.openrcconf
-CentOS:  lytixd.init
+SystemD: lockchaind.service
+Upstart: lockchaind.conf
+OpenRC:  lockchaind.openrc
+         lockchaind.openrcconf
+CentOS:  lockchaind.init
 macOS:    org.pivx.pivxd.plist
 ```
 

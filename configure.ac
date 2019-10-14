@@ -6,16 +6,16 @@ define(_CLIENT_VERSION_REVISION, 0)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2019)
-AC_INIT([Lytix Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.lytixchain.org],[lytix])
+AC_INIT([LockChain Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.lockchainchain.org],[lockchain])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=lytixd
-BITCOIN_GUI_NAME=lytix-qt
-BITCOIN_CLI_NAME=lytix-cli
-BITCOIN_TX_NAME=lytix-tx
+BITCOIN_DAEMON_NAME=lockchaind
+BITCOIN_GUI_NAME=lockchain-qt
+BITCOIN_CLI_NAME=lockchain-cli
+BITCOIN_TX_NAME=lockchain-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])

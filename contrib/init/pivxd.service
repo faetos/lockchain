@@ -5,19 +5,19 @@
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/lytix/lytix.conf
+# /etc/lockchain/lockchain.conf
 
 [Unit]
 Description=PIVX daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/lytixd -daemon -conf=/etc/lytix/lytix.conf -pid=/run/lytixd/lytixd.pid
-# Creates /run/lytixd owned by lytix
-RuntimeDirectory=lytixd
-User=lytix
+ExecStart=/usr/bin/lockchaind -daemon -conf=/etc/lockchain/lockchain.conf -pid=/run/lockchaind/lockchaind.pid
+# Creates /run/lockchaind owned by lockchain
+RuntimeDirectory=lockchaind
+User=lockchain
 Type=forking
-PIDFile=/run/lytixd/lytixd.pid
+PIDFile=/run/lockchaind/lockchaind.pid
 Restart=on-failure
 
 # Hardening measures
