@@ -4,6 +4,7 @@
 // Copyright (c) 2015-2018 The PIVX developers
 // Copyright (c) 2018 The Helium developers
 // Copyright (c) 2018-2019 The Lytix developer
+// Copyright (c) 2019 The LockChain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -60,18 +61,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000028b94db22c97211ba15866bc2c9bc0daa7e9ac410a6c9660d8be19915c7"))
-    (6942, uint256("0x00000010c715f94b9bfe7666f1f81b4bf20c4cb1fcd67a8c75305d6bf9372a20"))
-    (30000, uint256("0x00000000c568c33cf4b881a256e779e7c73b7e326db2f603a0ce16277506baa5"))
-    (60000, uint256("0x000000000222d4eb292e05aa35b4959f0705c77520d5e3c4980172988483db36"))
-    (101000, uint256("0xdf8bbe946d173b8bb266ddec0195dc415baadd332dfbedd79b4668ba69893aac"))
-    (170000, uint256("0xdfb4f14e31f62318ada32144417258b7ce040865343477641aabb0ff739508f1"))
-    (252000, uint256("0xb9e9141619cd48dddbd75a033f171b3cd9317f748d6a1ba8ce455ad2662c28d2"))
-    (312987, uint256("0x5d3dda2359f5e8c33b6eddd1a5cd35a4c8ac8036f779160176b4bfdb672da84c"))
-    (320547, uint256("0xb5746d774e01cd391b685c45b67e49bd10dd982594ca9db07753672a0eecae9e"))
-    (338259, uint256("0x2d8d514a8d25b12d539be6d3f19203ba775eda6089509ffaa2d2170f4db814e1"))
-    (342484, uint256("0x04256ee6229e65c0d8062dae8a25ff8e6157e036f0b5cddfce2e8998d1057ff0"))
-    (349570, uint256("0xd3ceb4f4434405b96317b3f79bbd635a1417e7c4af12785fb43068c326e6b69b"));
+    (0, uint256("0x0000028b94db22c97211ba15866bc2c9bc0daa7e9ac410a6c9660d8be19915c7"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1565880982, // * UNIX timestamp of last checkpoint block
@@ -134,7 +124,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
     genesis.vtx.push_back(txNew);
     {
 	//Dev - Governance start
-        txNew.vout[0].nValue = 50000000000000;
+        txNew.vout[0].nValue = 300000000000000;
         txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("8p2Kso1HYUUzbKzPjk6cqsuLt65y94ydgF"))) << OP_EQUALVERIFY << OP_CHECKSIG;
 	genesis.vtx.push_back(txNew);
 	txNew.vout[0].nValue = 13371711343;
@@ -157,7 +147,7 @@ genesis.vtx.push_back(txNew);
 
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward, const string addr1, const string addr2, const string addr3)
 {
-    const char* pszTimestamp = "Bitcoin Block 552860 - 0000000000000000002ab7cede604dedd982fe483fb0ab6c79d8574083758d7f at 2018-12-07 05:39:05";
+    const char* pszTimestamp = "World News Queen Elizabeth sets out PM Johnson's October 31 Brexit priority";
     const CScript genesisOutputScript = CScript() << OP_2 << ParseHex(DecodeBase58ToHex(addr1)) << ParseHex(DecodeBase58ToHex(addr2)) << ParseHex(DecodeBase58ToHex(addr3)) << OP_3 << OP_CHECKMULTISIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 };
@@ -174,12 +164,12 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x5f;
-        pchMessageStart[1] = 0x2a;
-        pchMessageStart[2] = 0xc3;
-        pchMessageStart[3] = 0xb4;
+        pchMessageStart[0] = 0x31;
+        pchMessageStart[1] = 0x4a;
+        pchMessageStart[2] = 0x8c;
+        pchMessageStart[3] = 0xb1;
         vAlertPubKey = ParseHex("0x"); // Disabled
-        nDefaultPort = 27071;
+        nDefaultPort = 10701;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Lytix starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210240;
         nMaxReorganizationDepth = 1000;
@@ -190,14 +180,14 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Lytix: 1 day
         //nTargetSpacing = 2 * 60;  // Lytix: 2 minutes
         nTargetSpacing = 60;  // Lytix: 2 minutes
-        nMaturity = 15;
+        nMaturity = 100;
         nMasternodeCountDrift = 20;
         nMaxnodeCountDrift = 20;
         nMaxMoneyOut = 100000000 * COIN;
 	strDevFeeAddress = "8s8jUWMPFFwGSsGE9JX1z95sCbYhiyPUeg";
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 100000; //  1 per minute  - 14 days @ 1440 per day
+        nLastPOWBlock = 10000; //  1 per minute  - 14 days @ 1440 per day
         //if the lowest block height (vSortedByTimestamp[0]) is >= switch height, use new modifier calc
         nZerocoinStartHeight = 99999999; // (PIVX: 863787, Phore 90000)
         nZerocoinStartTime = 3999999990; //  Tuesday, November 27, 2018 3:53:30 PM
@@ -252,17 +242,17 @@ public:
         }
 
 
-        vSeeds.push_back(CDNSSeedData("dns1", "dns1.lytixchain.org"));
-        vSeeds.push_back(CDNSSeedData("dns2", "dns2.lytixchain.org"));
-        vSeeds.push_back(CDNSSeedData("dns3", "dns3.lytixchain.org"));
+        vSeeds.push_back(CDNSSeedData("dns", "dns.lochchain.org"));
+        vSeeds.push_back(CDNSSeedData("dns1", "dns1.lockchain.org"));
+        vSeeds.push_back(CDNSSeedData("dns2", "dns2.lockchain.org"));
 
 
         // Lytix addresses start with '8 or 9'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,19);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,24);
         // Lytix script addresses start with '3'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,11);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,15);
         // Lytix private keys start with '7' (uncompressed) or 'V' (compressed)
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,17);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,11);
         // Lytix BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         // Lytix BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
@@ -322,14 +312,14 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0xf0;
-        pchMessageStart[1] = 0xa0;
-        pchMessageStart[2] = 0x0c;
-        pchMessageStart[3] = 0x0e;
+        pchMessageStart[0] = 0xe1;
+        pchMessageStart[1] = 0xc2;
+        pchMessageStart[2] = 0x5b;
+        pchMessageStart[3] = 0x2c;
         vAlertPubKey = ParseHex("");
         bnProofOfWorkLimit = ~uint256(0) >> 1; // 0x207fffff, Lytix testnet starting difficulty
         nSubsidyHalvingInterval = 210240;
-        nDefaultPort = 27072;
+        nDefaultPort = 17072;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -337,7 +327,7 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Lytix: 1 day
         nTargetSpacing = 60;  // Lytix: 2 minute
         nLastPOWBlock = 250;
-        nMaturity = 15;
+        nMaturity = 100;
         nMasternodeCountDrift = 2;
         nMaxnodeCountDrift = 2;
         // nModifierUpdateBlock = 0; //approx Mon, 17 Apr 2017 04:00:00 GMT
@@ -404,11 +394,11 @@ public:
         vSeeds.push_back(CDNSSeedData("testnet", "testnet.lytixchain.org"));
 
         // Testnet Lytix addresses start with 'X'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,21);
         // Testnet Lytix script addresses start with 'Y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,22);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,47);
         // Testnet private keys start with 'X' (uncompressed) or 'c' (compressed)
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,9);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,3);
         // Testnet Lytix BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
         // Testnet Lytix BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
@@ -451,10 +441,10 @@ public:
     {
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0xe0;
-        pchMessageStart[1] = 0x2a;
-        pchMessageStart[2] = 0xb4;
-        pchMessageStart[3] = 0x6e;
+        pchMessageStart[0] = 0xc3;
+        pchMessageStart[1] = 0xb1;
+        pchMessageStart[2] = 0xa8;
+        pchMessageStart[3] = 0x5c;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
@@ -463,7 +453,7 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Lytix: 1 day
         nTargetSpacing = 60;  // Lytix: 1 minute
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        nDefaultPort = 27075;
+        nDefaultPort = 17075;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis = CreateGenesisBlock(
@@ -540,7 +530,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 27076;
+        nDefaultPort = 17076;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
