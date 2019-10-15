@@ -1936,7 +1936,7 @@ int64_t GetBlockValue(int nHeight)
     int64_t CoinAmount = 0;
     //int64_t DropTime = 350000;
     //int64_t LAST_POW_BLOCK = 10000;
-    if nHeight <= 500000 {
+    if (nHeight <= 500000) {
         CoinAmount = static_cast<int64_t>(10 * COIN);
     } else if (nHeight > 500000 && nHeight <= 1000000) {
         CoinAmount = static_cast<int64_t>(8 * COIN);
