@@ -2,7 +2,7 @@
 // Copyright (c) 2017-2018 The PIVX developers
 // Copyright (c) 2019 The DeVault developers
 // Copyright (c) 2019 Jon Spock
-// Copyright (c) 2018-2019 The Lytix developers
+// Copyright (c) 2018-2019 The LockChain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,7 +26,7 @@
 #define DO_STRINGIZE(X) #X
 
 //! Copyright string used in Windows .rc files
-#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, 2014-" STRINGIZE(COPYRIGHT_YEAR) " The Dash Core Developers, 2015-" STRINGIZE(COPYRIGHT_YEAR) " The PIVX Core Developers" STRINGIZE(COPYRIGHT_YEAR) "The Lytix Core Developers"
+#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, 2014-" STRINGIZE(COPYRIGHT_YEAR) " The Dash Core Developers, 2015-" STRINGIZE(COPYRIGHT_YEAR) " The PIVX Core Developers" STRINGIZE(COPYRIGHT_YEAR) "The LockChain Core Developers"
 
 /**
  * bitcoind-res.rc includes this file, but it cannot cope with real c++ code.

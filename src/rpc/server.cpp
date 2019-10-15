@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2019 The Lytix developers
+// Copyright (c) 2018-2019 The LockChain developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -265,11 +265,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Lytix server.");
+            "\nStop LockChain server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "Lytix server stopping";
+    return "LockChain server stopping";
 }
 
 
@@ -354,55 +354,55 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* PIVX features */
-        {"lytix", "masternode", &masternode, true, true, false},
-        {"lytix", "listmasternodes", &listmasternodes, true, true, false},
-        {"lytix", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"lytix", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"lytix", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"lytix", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"lytix", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"lytix", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"lytix", "masternodedebug", &masternodedebug, true, true, false},
-        {"lytix", "startmasternode", &startmasternode, true, true, false},
-        {"lytix", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"lytix", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"lytix", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"lytix", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"lytix", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"lytix", "getmasternodescores", &getmasternodescores, true, true, false},
-	{"lytix", "maxnode", &maxnode, true, true, false},
-        {"lytix", "listmaxnodes", &listmaxnodes, true, true, false},
-        {"lytix", "getmaxnodecount", &getmaxnodecount, true, true, false},
-        {"lytix", "maxnodeconnect", &maxnodeconnect, true, true, false},
-        {"lytix", "createmaxnodebroadcast", &createmaxnodebroadcast, true, true, false},
-        {"lytix", "decodemaxnodebroadcast", &decodemaxnodebroadcast, true, true, false},
-        {"lytix", "relaymaxnodebroadcast", &relaymaxnodebroadcast, true, true, false},
-        {"lytix", "maxnodecurrent", &maxnodecurrent, true, true, false},
-        {"lytix", "maxnodedebug", &maxnodedebug, true, true, false},
-        {"lytix", "startmaxnode", &startmaxnode, true, true, false},
-        {"lytix", "createmaxnodekey", &createmaxnodekey, true, true, false},
-        {"lytix", "getmaxnodeoutputs", &getmaxnodeoutputs, true, true, false},
-        {"lytix", "listmaxnodeconf", &listmaxnodeconf, true, true, false},
-        {"lytix", "getmaxnodestatus", &getmaxnodestatus, true, true, false},
-        {"lytix", "getmaxnodewinners", &getmaxnodewinners, true, true, false},
-        {"lytix", "getmaxnodescores", &getmaxnodescores, true, true, false},
-        {"lytix", "mnbudget", &mnbudget, true, true, false},
-        {"lytix", "preparebudget", &preparebudget, true, true, false},
-        {"lytix", "submitbudget", &submitbudget, true, true, false},
-        {"lytix", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"lytix", "maxbudgetvote", &mnbudgetvote, true, true, false},
-        {"lytix", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"lytix", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"lytix", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"lytix", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"lytix", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"lytix", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"lytix", "checkbudgets", &checkbudgets, true, true, false},
-        {"lytix", "mnsync", &mnsync, true, true, false},
-        {"lytix", "spork", &spork, true, true, false},
-        {"lytix", "getpoolinfo", &getpoolinfo, true, true, false},
-        {"lytix", "getmaxpoolinfo", &getmaxpoolinfo, true, true, false},
-        {"lytix", "maxsync", &maxsync, true, true, false},
+        {"lockchain", "masternode", &masternode, true, true, false},
+        {"lockchain", "listmasternodes", &listmasternodes, true, true, false},
+        {"lockchain", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"lockchain", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"lockchain", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"lockchain", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"lockchain", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"lockchain", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"lockchain", "masternodedebug", &masternodedebug, true, true, false},
+        {"lockchain", "startmasternode", &startmasternode, true, true, false},
+        {"lockchain", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"lockchain", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"lockchain", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"lockchain", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"lockchain", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"lockchain", "getmasternodescores", &getmasternodescores, true, true, false},
+	{"lockchain", "maxnode", &maxnode, true, true, false},
+        {"lockchain", "listmaxnodes", &listmaxnodes, true, true, false},
+        {"lockchain", "getmaxnodecount", &getmaxnodecount, true, true, false},
+        {"lockchain", "maxnodeconnect", &maxnodeconnect, true, true, false},
+        {"lockchain", "createmaxnodebroadcast", &createmaxnodebroadcast, true, true, false},
+        {"lockchain", "decodemaxnodebroadcast", &decodemaxnodebroadcast, true, true, false},
+        {"lockchain", "relaymaxnodebroadcast", &relaymaxnodebroadcast, true, true, false},
+        {"lockchain", "maxnodecurrent", &maxnodecurrent, true, true, false},
+        {"lockchain", "maxnodedebug", &maxnodedebug, true, true, false},
+        {"lockchain", "startmaxnode", &startmaxnode, true, true, false},
+        {"lockchain", "createmaxnodekey", &createmaxnodekey, true, true, false},
+        {"lockchain", "getmaxnodeoutputs", &getmaxnodeoutputs, true, true, false},
+        {"lockchain", "listmaxnodeconf", &listmaxnodeconf, true, true, false},
+        {"lockchain", "getmaxnodestatus", &getmaxnodestatus, true, true, false},
+        {"lockchain", "getmaxnodewinners", &getmaxnodewinners, true, true, false},
+        {"lockchain", "getmaxnodescores", &getmaxnodescores, true, true, false},
+        {"lockchain", "mnbudget", &mnbudget, true, true, false},
+        {"lockchain", "preparebudget", &preparebudget, true, true, false},
+        {"lockchain", "submitbudget", &submitbudget, true, true, false},
+        {"lockchain", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"lockchain", "maxbudgetvote", &mnbudgetvote, true, true, false},
+        {"lockchain", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"lockchain", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"lockchain", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"lockchain", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"lockchain", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"lockchain", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"lockchain", "checkbudgets", &checkbudgets, true, true, false},
+        {"lockchain", "mnsync", &mnsync, true, true, false},
+        {"lockchain", "spork", &spork, true, true, false},
+        {"lockchain", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"lockchain", "getmaxpoolinfo", &getmaxpoolinfo, true, true, false},
+        {"lockchain", "maxsync", &maxsync, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -636,14 +636,14 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> lytix-cli " + methodname + " " + args + "\n";
+    return "> lockchain-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:27073/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:17073/\n";
 }
 
 void RPCRegisterTimerInterface(RPCTimerInterface *iface)

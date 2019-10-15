@@ -269,9 +269,9 @@
     </message>
     </context>
 <context>
-    <name>ZLytixControlDialog</name>
+    <name>ZLockChainControlDialog</name>
     </context>
 <context>
-    <name>lytix-core</name>
+    <name>lockchain-core</name>
     </context>
 </TS>

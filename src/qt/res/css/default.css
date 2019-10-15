@@ -878,7 +878,7 @@ background-image: url(':/images/logo_horizontal');
 background-repeat: no-repeat;
 }
 
-QWidget .QFrame#frame_Header { /* Header with Page-Title and Lytix-image */
+QWidget .QFrame#frame_Header { /* Header with Page-Title and LockChain-image */
 min-width:400px;
 background-color:#ffffff;
 }

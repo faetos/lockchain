@@ -5,7 +5,7 @@
 // Copyright (c) 2018 The Helium developers
 // Copyright (c) 2019 The DeVault developers
 // Copyright (c) 2019 Jon Spock
-// Copyright (c) 2018-2019 The Lytix developers
+// Copyright (c) 2018-2019 The LockChain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -59,7 +59,7 @@ using namespace std;
 using namespace libzerocoin;
 
 #if defined(NDEBUG)
-#error "Lytix cannot be compiled without assertions."
+#error "LockChain cannot be compiled without assertions."
 #endif
 
 /**
@@ -1062,7 +1062,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const Coi
         }
     }
 
-    /* NOTE: GJH Inappropriate for Lytix
+    /* NOTE: GJH Inappropriate for LockChain
     //Reject serial's that are not in the acceptable value range
     bool fUseV1Params = spend.getVersion() < libzerocoin::PrivateCoin::PUBKEY_VERSION;
     if (pindex->nHeight > Params().Zerocoin_Block_EnforceSerialRange() &&
@@ -1627,7 +1627,7 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
                     return false;
                 }
 
-                /* NOTE: GJH inappropriate for Lytix
+                /* NOTE: GJH inappropriate for LockChain
                 // check for invalid/fraudulent inputs
                 if (!ValidOutPoint(txin.prevout, chainActive.Height())) {
                     return state.Invalid(error("%s : tried to spend invalid input %s in tx %s", __func__, txin.prevout.ToString(),
@@ -2523,7 +2523,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("lytix-scriptch");
+    RenameThread("lockchain-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -5820,18 +5820,18 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
 	// Banned versions moving forward - Chain switch at 1.3
 	// Banned all up to 1.7.4 to clean chain
-	if (pfrom->cleanSubVer == "/Lytix Core:1.7.3/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.7.2/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.7.1/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.7.0/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.6.3/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.6.2/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.6.1/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.6.0/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.5.7/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.2.1/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.2.0/" ||
-            pfrom->cleanSubVer == "/Lytix Core:1.0.1/") {
+	if (pfrom->cleanSubVer == "/LockChain Core:1.7.3/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.7.2/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.7.1/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.7.0/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.6.3/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.6.2/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.6.1/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.6.0/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.5.7/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.2.1/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.2.0/" ||
+            pfrom->cleanSubVer == "/LockChain Core:1.0.1/") {
             LOCK(cs_main);
             Misbehaving(pfrom->GetId(), 100); // instantly ban them because they have bad block data
             return false;

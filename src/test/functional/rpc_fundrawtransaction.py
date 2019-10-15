@@ -201,9 +201,9 @@ class RawTransactionsTest(BitcoinTestFramework):
 
         try:
             self.nodes[2].fundrawtransaction(rawtx, {'changeAddress': 'foobar'})
-            raise AssertionError("Accepted invalid lytix address")
+            raise AssertionError("Accepted invalid lockchain address")
         except JSONRPCException as e:
-            assert("changeAddress must be a valid lytix address" in e.error['message'])
+            assert("changeAddress must be a valid lockchain address" in e.error['message'])
 
 
         ############################################################

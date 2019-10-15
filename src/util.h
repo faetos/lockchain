@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
 // Copyright (c) 2019 The Zenzo Core developers
-// Copyright (c) 2018-2019 The Lytix developers
+// Copyright (c) 2018-2019 The LockChain developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -224,7 +224,7 @@ void RenameThread(const char* name);
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("lytix-%s", name);
+    std::string s = strprintf("lockchain-%s", name);
     RenameThread(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);

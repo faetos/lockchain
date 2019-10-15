@@ -2941,7 +2941,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate Lytix Deposit Address</string>
+      <string>Generate LockChain Deposit Address</string>
      </property>
      <property name="icon">
       <iconset resource="../bitcoin.qrc">

@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lytix address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Lytix jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this LockChain address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres LockChain jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>&amp;Rdzeń Lytix</translation>
+        <source>LockChain Core</source>
+        <translation>&amp;Rdzeń LockChain</translation>
     </message>
     <message>
-        <source>Send coins to a Lytix address</source>
-        <translation>Wyślij monety do adresu Lytix</translation>
+        <source>Send coins to a LockChain address</source>
+        <translation>Wyślij monety do adresu LockChain</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and lytix: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i lytix:URI)</translation>
+        <source>Request payments (generates QR codes and lockchain: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i lockchain:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Lytix Core</source>
+        <source>&amp;About LockChain Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Lytix Core</source>
+        <source>Show information about LockChain Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lytix</source>
-        <translation>Modyfikuj opcje konfiguracji Lytix</translation>
+        <source>Modify configuration options for LockChain</source>
+        <translation>Modyfikuj opcje konfiguracji LockChain</translation>
     </message>
     <message>
-        <source>Sign messages with your Lytix addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami Lytix, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your LockChain addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami LockChain, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lytix addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Lytix</translation>
+        <source>Verify messages to ensure they were signed with specified LockChain addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu LockChain</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a Lytix: URI or payment request</source>
-        <translation>Otwórz Lytix: URI i żądanie zapłaty</translation>
+        <source>Open a LockChain: URI or payment request</source>
+        <translation>Otwórz LockChain: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Lytix Core help message to get a list with possible Lytix command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia Lytix, aby dostać listę możliwych opcji Lytix command-line</translation>
+        <source>Show the LockChain Core help message to get a list with possible LockChain command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia LockChain, aby dostać listę możliwych opcji LockChain command-line</translation>
     </message>
     <message>
-        <source>Lytix Core client</source>
-        <translation>Rdzeń Lytix klient</translation>
+        <source>LockChain Core client</source>
+        <translation>Rdzeń LockChain klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lytix Core</source>
-        <translation>&amp;Rdzeń Lytix</translation>
+        <source>LockChain Core</source>
+        <translation>&amp;Rdzeń LockChain</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>&amp;Rdzeń Lytix</translation>
+        <source>LockChain Core</source>
+        <translation>&amp;Rdzeń LockChain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start Lytix after logging in to the system.</source>
-        <translation>Automatycznie uruchom Lytix po zalogowaniu do systemu</translation>
+        <source>Automatically start LockChain after logging in to the system.</source>
+        <translation>Automatycznie uruchom LockChain po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start Lytix on system login</source>
-        <translation>&amp;Uruchom Lytix podczas logowania do systemu</translation>
+        <source>&amp;Start LockChain on system login</source>
+        <translation>&amp;Uruchom LockChain podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lytix.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Lytix</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting LockChain.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie LockChain</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/lytix-project/lytix-project-translations</source>
+https://www.transifex.com/lockchain-project/lockchain-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/lytix-project/lytix-project-translations </translation>
+https://www.transifex.com/lockchain-project/lockchain-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the Lytix network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią Lytix poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the LockChain network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią LockChain poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations </translation
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a Lytix address (e.g. %1)</source>
-        <translation>Wprowadź adres Lytix (np. %1)</translation>
+        <source>Enter a LockChain address (e.g. %1)</source>
+        <translation>Wprowadź adres LockChain (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations </translation
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lytix address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Lytix jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this LockChain address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres LockChain jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations </translation
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lytix Core</source>
-        <translation>&amp;Rdzeń Lytix</translation>
+        <source>LockChain Core</source>
+        <translation>&amp;Rdzeń LockChain</translation>
     </message>
     </context>
 <context>
@@ -2027,14 +2027,14 @@ https://www.transifex.com/lytix-project/lytix-project-translations </translation
     </message>
     </context>
 <context>
-    <name>ZLytixControlDialog</name>
+    <name>ZLockChainControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>lytix-core</name>
+    <name>lockchain-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

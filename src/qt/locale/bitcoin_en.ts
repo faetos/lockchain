@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Lytix addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your LockChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Lytix addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your LockChain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Lytix will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
+        <source>LockChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -307,7 +307,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Enter a Lytix Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a LockChain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -318,7 +318,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The Lytix address to sign the message with</source>
+        <source>The LockChain address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -360,7 +360,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Lytix address</source>
+        <source>Sign the message to prove you own this LockChain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -391,12 +391,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The Lytix address the message was signed with</source>
+        <source>The LockChain address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified Lytix address</source>
+        <source>Verify the message to ensure it was signed with the specified LockChain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -811,17 +811,17 @@
     <message>
         <location line="-427"/>
         <location line="+890"/>
-        <source>Lytix Core</source>
+        <source>LockChain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-707"/>
-        <source>Send coins to a Lytix address</source>
+        <source>Send coins to a LockChain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and lytix: URIs)</source>
+        <source>Request payments (generates QR codes and lockchain: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -841,27 +841,27 @@
     </message>
     <message>
         <location line="+31"/>
-        <source>&amp;About Lytix Core</source>
+        <source>&amp;About LockChain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Lytix Core</source>
+        <source>Show information about LockChain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for Lytix</source>
+        <source>Modify configuration options for LockChain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your Lytix addresses to prove you own them</source>
+        <source>Sign messages with your LockChain addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Lytix addresses</source>
+        <source>Verify messages to ensure they were signed with specified LockChain addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -901,7 +901,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Open a Lytix: URI or payment request</source>
+        <source>Open a LockChain: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -916,17 +916,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Lytix Core help message to get a list with possible Lytix command-line options</source>
+        <source>Show the LockChain Core help message to get a list with possible LockChain command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+214"/>
-        <source>Lytix Core client</source>
+        <source>LockChain Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+212"/>
-        <source>%n active connection(s) to Lytix network</source>
+        <source>%n active connection(s) to LockChain network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1127,7 +1127,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+476"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (lytix.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (lockchain.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1496,7 +1496,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid Lytix address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid LockChain address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1552,7 +1552,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>Lytix Core</source>
+        <source>LockChain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1563,7 +1563,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About Lytix Core</source>
+        <source>About LockChain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1621,17 +1621,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Lytix Core.</source>
+        <source>Welcome to LockChain Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Lytix Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where LockChain Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Lytix Core will download and store a copy of the Lytix block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>LockChain Core will download and store a copy of the LockChain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1646,7 +1646,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>Lytix Core</source>
+        <source>LockChain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1950,8 +1950,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Lytix addresses after it matures.
-To Add: enter percentage to give and Lytix address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other LockChain addresses after it matures.
+To Add: enter percentage to give and LockChain address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -2380,17 +2380,17 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Lytix&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening LockChain&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Lytix&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening LockChain&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Lytix&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening LockChain&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2466,7 +2466,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the Lytix client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the LockChain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2491,12 +2491,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="-176"/>
-        <source>Automatically start Lytix after logging in to the system.</source>
+        <source>Automatically start LockChain after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Lytix on system login</source>
+        <source>&amp;Start LockChain on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2531,13 +2531,13 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lytix.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting LockChain.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/lytix-project/lytix-project-translations</source>
+https://www.transifex.com/lockchain-project/lockchain-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2568,7 +2568,7 @@ https://www.transifex.com/lytix-project/lytix-project-translations</source>
     </message>
     <message>
         <location line="+114"/>
-        <source>Connect to the Lytix network through a SOCKS5 proxy.</source>
+        <source>Connect to the LockChain network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2772,7 +2772,7 @@ https://www.transifex.com/lytix-project/lytix-project-translations</source>
     <message>
         <location line="-153"/>
         <location line="+1393"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lytix network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LockChain network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2947,13 +2947,13 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     </message>
     <message>
         <location line="+1"/>
-        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in lytix.conf.</source>
+        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in lockchain.conf.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>AutoMint is currently disabled.
-To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in lytix.conf</source>
+To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in lockchain.conf</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2993,12 +2993,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start lytix: click-to-pay handler</source>
+        <source>Cannot start lockchain: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Lytix address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid LockChain address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3116,13 +3116,13 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+10"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lytix network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LockChain network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+52"/>
         <location line="+46"/>
-        <source>Enter an amount of Piv to convert to zLytix</source>
+        <source>Enter an amount of Piv to convert to zLockChain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3202,12 +3202,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+45"/>
-        <source>zLytix Control</source>
+        <source>zLockChain Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zLytix Selected:</source>
+        <source>zLockChain Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3275,7 +3275,7 @@ zLYTX are mature when they have more than 20 confirmations AND more than 2 mints
     </message>
     <message>
         <location line="+27"/>
-        <source>The Lytix address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The LockChain address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3625,7 +3625,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Invalid Lytix Address</source>
+        <source>Invalid LockChain Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3695,7 +3695,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+15"/>
-        <source>zLytix Spend #: </source>
+        <source>zLockChain Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3725,7 +3725,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>zLytix Mint</source>
+        <source>zLockChain Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3753,7 +3753,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a Lytix address (e.g. %1)</source>
+        <source>Enter a LockChain address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3948,7 +3948,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the Lytix debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the LockChain debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4175,7 +4175,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the Lytix RPC console.</source>
+        <source>Welcome to the LockChain RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4291,12 +4291,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Lytix network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the LockChain network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Lytix network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the LockChain network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4660,7 +4660,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Lytix transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for LockChain transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4791,7 +4791,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+622"/>
-        <source>Warning: Invalid Lytix address</source>
+        <source>Warning: Invalid LockChain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4930,7 +4930,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>The Lytix address to send the payment to</source>
+        <source>The LockChain address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4984,7 +4984,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the Lytix: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lytix network.</source>
+        <source>A message that was attached to the LockChain: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the LockChain network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5019,7 +5019,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>Lytix Core is shutting down...</source>
+        <source>LockChain Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5047,7 +5047,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>The Lytix address to sign the message with</source>
+        <source>The LockChain address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5089,17 +5089,17 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Lytix address</source>
+        <source>Sign the message to prove you own this LockChain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The Lytix address the message was signed with</source>
+        <source>The LockChain address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Lytix address</source>
+        <source>Verify the message to ensure it was signed with the specified LockChain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5214,7 +5214,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Lytix Core</source>
+        <source>LockChain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5234,7 +5234,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>The Lytix Core developers</source>
+        <source>The LockChain Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5661,27 +5661,27 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted Piv to zLytix</source>
+        <source>Converted Piv to zLockChain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zLytix</source>
+        <source>Spent zLockChain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received Piv from zLytix</source>
+        <source>Received Piv from zLockChain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zLytix from zLytix Spend</source>
+        <source>Minted Change as zLockChain from zLockChain Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zLytix to Piv</source>
+        <source>Converted zLockChain to Piv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5691,7 +5691,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+22"/>
-        <source>zLytix Accumulator</source>
+        <source>zLockChain Accumulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5830,7 +5830,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Received Piv from zLytix</source>
+        <source>Received Piv from zLockChain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5845,7 +5845,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Zerocoin Spend, Change in zLytix</source>
+        <source>Zerocoin Spend, Change in zLockChain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6055,9 +6055,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>lytix-core</name>
+    <name>lockchain-core</name>
     <message>
-        <location filename="../lytixstrings.cpp" line="+15"/>
+        <location filename="../lockchainstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -6093,7 +6093,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. Lytix Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. LockChain Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6288,22 +6288,22 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>To use lytixd, or the -server option to lytix-qt, you must set an rpcpassword in the configuration file:
+        <source>To use lockchaind, or the -server option to lockchain-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=lytixrpc
+rpcuser=lockchainrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;LockChain Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. Lytix Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. LockChain Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6338,7 +6338,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Lytix Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong LockChain Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6378,8 +6378,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>(27071 could be used only on mainnet)</source>
-        <translation type="unfinished">(27071 could be used only on mainnet)</translation>
+        <source>(17071 could be used only on mainnet)</source>
+        <translation type="unfinished">(17071 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6393,7 +6393,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 27071 for mainnet)</source>
+        <source>(must be 17071 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6536,8 +6536,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.co
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2018-%i The Lytix Core Developers</source>
-        <translation>Copyright (C) 2018-%i The Lytix Core Developers</translation>
+        <source>Copyright (C) 2018-%i The LockChain Core Developers</source>
+        <translation>Copyright (C) 2018-%i The LockChain Core Developers</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6651,7 +6651,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Lytix Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of LockChain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6806,7 +6806,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Lytix Core is shutting down.</source>
+        <source>Initialization sanity check failed. LockChain Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6923,7 +6923,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all Lytix specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all LockChain specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6933,7 +6933,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zLytix minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zLockChain minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7683,7 +7683,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Lytix Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Lytix Core to complete</source>
+        <source>Wallet needed to be rewritten: restart LockChain Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

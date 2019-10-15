@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Lytix"
-            VALUE "FileDescription",    "lytixd (OSS daemon/client for Lytix)"
+            VALUE "CompanyName",        "LockChain"
+            VALUE "FileDescription",    "lockchaind (OSS daemon/client for LockChain)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "lytixd"
+            VALUE "InternalName",       "lockchaind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "lytixd.exe"
-            VALUE "ProductName",        "lytixd"
+            VALUE "OriginalFilename",   "lockchaind.exe"
+            VALUE "ProductName",        "lockchaind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

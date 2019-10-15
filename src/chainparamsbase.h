@@ -10,8 +10,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between lytix-cli and lytixd)
- * of a given instance of the Lytix system.
+ * CBaseChainParams defines the base parameters (shared between lockchain-cli and lockchaind)
+ * of a given instance of the LockChain system.
  */
 class CBaseChainParams
 {

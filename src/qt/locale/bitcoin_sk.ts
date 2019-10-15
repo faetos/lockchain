@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your Lytix addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše Lytix adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your LockChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše LockChain adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your Lytix addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Lytix adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your LockChain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše LockChain adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Lytix will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
-        <translation>Lytix sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše LYTX pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>LockChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
+        <translation>LockChain sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše LYTX pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Lytix Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Lytix, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a LockChain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu LockChain, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Lytix address to sign the message with</source>
-        <translation>Adresa Lytix, ktorou chcete správu podpísať</translation>
+        <source>The LockChain address to sign the message with</source>
+        <translation>Adresa LockChain, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lytix address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Lytix adresy</translation>
+        <source>Sign the message to prove you own this LockChain address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto LockChain adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The Lytix address the message was signed with</source>
-        <translation>Lytix adresa, ktorou bola správa podpísaná</translation>
+        <source>The LockChain address the message was signed with</source>
+        <translation>LockChain adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lytix address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Lytix adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified LockChain address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou LockChain adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
-        <source>Send coins to a Lytix address</source>
-        <translation>Odoslať mince na adresu Lytix</translation>
+        <source>Send coins to a LockChain address</source>
+        <translation>Odoslať mince na adresu LockChain</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and lytix: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a lytix: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and lockchain: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a lockchain: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Lytix Core</source>
-        <translation>O Lytix Core</translation>
+        <source>&amp;About LockChain Core</source>
+        <translation>O LockChain Core</translation>
     </message>
     <message>
-        <source>Show information about Lytix Core</source>
-        <translation>Zobraziť informácie o Lytix Core</translation>
+        <source>Show information about LockChain Core</source>
+        <translation>Zobraziť informácie o LockChain Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lytix</source>
-        <translation>Zmeňte možnosti konfigurácie pre Lytix</translation>
+        <source>Modify configuration options for LockChain</source>
+        <translation>Zmeňte možnosti konfigurácie pre LockChain</translation>
     </message>
     <message>
-        <source>Sign messages with your Lytix addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy Lytix, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your LockChain addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy LockChain, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lytix addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Lytix adresami</translation>
+        <source>Verify messages to ensure they were signed with specified LockChain addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými LockChain adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a Lytix: URI or payment request</source>
-        <translation>Otvorte Lytix: URI alebo žiadosť o platbu</translation>
+        <source>Open a LockChain: URI or payment request</source>
+        <translation>Otvorte LockChain: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Lytix Core help message to get a list with possible Lytix command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Lytix Core a získajte zoznam možností príkazového riadka Lytix</translation>
+        <source>Show the LockChain Core help message to get a list with possible LockChain command-line options</source>
+        <translation>Zobraziť pomocnú správu programu LockChain Core a získajte zoznam možností príkazového riadka LockChain</translation>
     </message>
     <message>
-        <source>Lytix Core client</source>
-        <translation>Lytix Core klient</translation>
+        <source>LockChain Core client</source>
+        <translation>LockChain Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (lytix.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (lytix.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (lockchain.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (lockchain.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -908,15 +908,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1140,8 +1140,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Lytix address to sign the message with</source>
-        <translation>Adresa Lytix, ktorou chcete správu podpísať</translation>
+        <source>The LockChain address to sign the message with</source>
+        <translation>Adresa LockChain, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1164,16 +1164,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lytix address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Lytix adresy</translation>
+        <source>Sign the message to prove you own this LockChain address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto LockChain adresy</translation>
     </message>
     <message>
-        <source>The Lytix address the message was signed with</source>
-        <translation>Lytix adresa, ktorou bola správa podpísaná</translation>
+        <source>The LockChain address the message was signed with</source>
+        <translation>LockChain adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lytix address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Lytix adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified LockChain address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou LockChain adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1211,8 +1211,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     </context>
 <context>
@@ -1307,10 +1307,10 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZLytixControlDialog</name>
+    <name>ZLockChainControlDialog</name>
     </context>
 <context>
-    <name>lytix-core</name>
+    <name>lockchain-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

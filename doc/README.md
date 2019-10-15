@@ -1,40 +1,40 @@
-Lytix Core
+LockChain Core
 =====================
 
 Setup
 ---------------------
-[Lytix Core](http://lytixchain.org/wallet) is the original Lytix client and it builds the backbone of the network. However, it downloads and stores the entire history of Lytix transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[LockChain Core](http://lockchainchain.org/wallet) is the original LockChain client and it builds the backbone of the network. However, it downloads and stores the entire history of LockChain transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Lytix on your native platform.
+The following are some helpful notes on how to run LockChain on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/lytix-qt (GUI, 32-bit) or bin/32/lytixd (headless, 32-bit)
-- bin/64/lytix-qt (GUI, 64-bit) or bin/64/lytixd (headless, 64-bit)
+- bin/32/lockchain-qt (GUI, 32-bit) or bin/32/lockchaind (headless, 32-bit)
+- bin/64/lockchain-qt (GUI, 64-bit) or bin/64/lockchaind (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run lytix-qt.exe.
+Unpack the files into a directory, and then run lockchain-qt.exe.
 
 ### OSX
 
-Drag Lytix-Qt to your applications folder, and then run Lytix-Qt.
+Drag LockChain-Qt to your applications folder, and then run LockChain-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Lytix Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [LockChain Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Lytix Forum](http://forum.lytix.org/).
-* Join our Discord server [Discord Server](https://discord.lytixchain.org)
-* Join one of our Slack groups [Lytix Slack Groups](https://lytixchain.org/slack-logins/) (Main community is replaced by Discord).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [LockChain Forum](http://forum.lockchain.org/).
+* Join our Discord server [Discord Server](https://discord.lockchainchain.org)
+* Join one of our Slack groups [LockChain Slack Groups](https://lockchainchain.org/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
-The following are developer notes on how to build Lytix on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build LockChain on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -42,7 +42,7 @@ The following are developer notes on how to build Lytix on your native platform.
 
 Development
 ---------------------
-The Pivx repo's [root README](https://github.com/Lytix-Project/Lytix/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Pivx repo's [root README](https://github.com/LockChain-Project/LockChain/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,8 +56,8 @@ The Pivx repo's [root README](https://github.com/Lytix-Project/Lytix/blob/master
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Lytix](http://forum.lytix.org/) forum.
-* Join the [Lytix-Dev](https://lytix-dev.slack.com/) Slack group ([Sign-Up](https://lytix-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [LockChain](http://forum.lockchain.org/) forum.
+* Join the [LockChain-Dev](https://lockchain-dev.slack.com/) Slack group ([Sign-Up](https://lockchain-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

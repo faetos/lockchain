@@ -1,4 +1,4 @@
-Name "Lytix Core (-bit)"
+Name "LockChain Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,23 +6,23 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 1.5.0
-!define COMPANY "Lytix Core project"
-!define URL https://www.lytixchain.org
+!define COMPANY "LockChain Core project"
+!define URL https://www.lockchainchain.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/faetos/LYTDEV/lytix/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/faetos/LYTDEV/lytix/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/faetos/LYTDEV/lockchain/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/faetos/LYTDEV/lockchain/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/faetos/LYTDEV/lytix/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/faetos/LYTDEV/lockchain/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Lytix Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\lytix-qt
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "LockChain Core"
+!define MUI_FINISHPAGE_RUN $INSTDIR\lockchain-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/faetos/LYTDEV/lytix/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/faetos/LYTDEV/lockchain/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,18 +48,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/faetos/LYTDEV/lytix/lytix-${VERSION}-win-setup.exe
+OutFile /home/faetos/LYTDEV/lockchain/lockchain-${VERSION}-win-setup.exe
 !if "" == "64"
-InstallDir $PROGRAMFILES64\Lytix
+InstallDir $PROGRAMFILES64\LockChain
 !else
-InstallDir $PROGRAMFILES\Lytix
+InstallDir $PROGRAMFILES\LockChain
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.0
-VIAddVersionKey ProductName "Lytix Core"
+VIAddVersionKey ProductName "LockChain Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/faetos/LYTDEV/lytix/release/lytix-qt
-    File /oname=COPYING.txt /home/faetos/LYTDEV/lytix/COPYING
-    File /oname=readme.txt /home/faetos/LYTDEV/lytix/doc/README_windows.txt
+    File /home/faetos/LYTDEV/lockchain/release/lockchain-qt
+    File /oname=COPYING.txt /home/faetos/LYTDEV/lockchain/COPYING
+    File /oname=readme.txt /home/faetos/LYTDEV/lockchain/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/faetos/LYTDEV/lytix/release/lytixd
-    File /home/faetos/LYTDEV/lytix/release/lytix-cli
+    File /home/faetos/LYTDEV/lockchain/release/lockchaind
+    File /home/faetos/LYTDEV/lockchain/release/lockchain-cli
     SetOutPath $INSTDIR\doc
-    File /r /home/faetos/LYTDEV/lytix/doc\*.*
+    File /r /home/faetos/LYTDEV/lockchain/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
@@ -91,8 +91,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\lytix-qt
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Lytix Core (testnet, -bit).lnk" "$INSTDIR\lytix-qt" "-testnet" "$INSTDIR\lytix-qt" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\lockchain-qt
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\LockChain Core (testnet, -bit).lnk" "$INSTDIR\lockchain-qt" "-testnet" "$INSTDIR\lockchain-qt" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -103,10 +103,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "lytix" "URL Protocol" ""
-    WriteRegStr HKCR "lytix" "" "URL:Lytix"
-    WriteRegStr HKCR "lytix\DefaultIcon" "" $INSTDIR\lytix-qt
-    WriteRegStr HKCR "lytix\shell\open\command" "" '"$INSTDIR\lytix-qt" "%1"'
+    WriteRegStr HKCR "lockchain" "URL Protocol" ""
+    WriteRegStr HKCR "lockchain" "" "URL:LockChain"
+    WriteRegStr HKCR "lockchain\DefaultIcon" "" $INSTDIR\lockchain-qt
+    WriteRegStr HKCR "lockchain\shell\open\command" "" '"$INSTDIR\lockchain-qt" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -124,7 +124,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\lytix-qt
+    Delete /REBOOTOK $INSTDIR\lockchain-qt
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -136,8 +136,8 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Lytix Core (testnet, -bit).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Lytix.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\LockChain Core (testnet, -bit).lnk"
+    Delete /REBOOTOK "$SMSTARTUP\LockChain.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -145,7 +145,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "lytix"
+    DeleteRegKey HKCR "lockchain"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

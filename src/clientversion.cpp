@@ -2,7 +2,7 @@
 // Copyright (c) 2016-2017 The PIVX developers
 // Copyright (c) 2019 The DeVault developers
 // Copyright (c) 2019 Jon Spock
-// Copyright (c) 2018-2019 The Lytix developers
+// Copyright (c) 2018-2019 The LockChain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,7 +17,7 @@
  * for both the daemon and GUI client, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Lytix Core");
+const std::string CLIENT_NAME("LockChain Core");
 
 /**
  * Client version number

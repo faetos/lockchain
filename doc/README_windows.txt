@@ -1,9 +1,9 @@
-Lytix Core
+LockChain Core
 =====================
 
 Intro
 -----
-Lytix is a free open source peer-to-peer electronic cash system that is
+LockChain is a free open source peer-to-peer electronic cash system that is
 completely decentralized, without the need for a central server or trusted
 parties.  Users hold the crypto keys to their own money and transact directly
 with each other, with the help of a P2P network to check for double-spending.
@@ -11,9 +11,9 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-Unpack the files into a directory and run lytix-qt.exe.
+Unpack the files into a directory and run lockchain-qt.exe.
 
-Lytix Core is the original Lytix client and it builds the backbone of the network.
-However, it downloads and stores the entire history of Lytix transactions;
+LockChain Core is the original LockChain client and it builds the backbone of the network.
+However, it downloads and stores the entire history of LockChain transactions;
 depending on the speed of your computer and network connection, the synchronization
 process can take anywhere from a few hours to a day or more.

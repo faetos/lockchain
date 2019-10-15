@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your Lytix addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços Lytix para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your LockChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços LockChain para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Lytix addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços Lytix para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your LockChain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços LockChain para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>Lytix will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
-        <translation>Lytix vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas LYTXs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>LockChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
+        <translation>LockChain vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas LYTXs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -235,7 +235,7 @@
         <translation>&amp;Encriptação BIP 38</translation>
     </message>
     <message>
-        <source>Enter a Lytix Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a LockChain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
@@ -243,8 +243,8 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The Lytix address to sign the message with</source>
-        <translation>O endereço Lytix para assinar a mensagem</translation>
+        <source>The LockChain address to sign the message with</source>
+        <translation>O endereço LockChain para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lytix address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço Lytix</translation>
+        <source>Sign the message to prove you own this LockChain address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço LockChain</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -291,12 +291,12 @@
         <translation>Limpar &amp;Tudo</translation>
     </message>
     <message>
-        <source>The Lytix address the message was signed with</source>
-        <translation>O endereço Lytix que assinou a mensagem</translation>
+        <source>The LockChain address the message was signed with</source>
+        <translation>O endereço LockChain que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lytix address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Lytix especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified LockChain address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço LockChain especificado.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -586,16 +586,16 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
-        <source>Send coins to a Lytix address</source>
-        <translation>Enviar moedas para um endereço Lytix</translation>
+        <source>Send coins to a LockChain address</source>
+        <translation>Enviar moedas para um endereço LockChain</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and lytix: URIs)</source>
-        <translation>Requisitar pagamentos (gera códigos QR e lytix: URIs)</translation>
+        <source>Request payments (generates QR codes and lockchain: URIs)</source>
+        <translation>Requisitar pagamentos (gera códigos QR e lockchain: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -606,24 +606,24 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Lytix Core</source>
-        <translation>&amp;Sobre o Lytix Core</translation>
+        <source>&amp;About LockChain Core</source>
+        <translation>&amp;Sobre o LockChain Core</translation>
     </message>
     <message>
-        <source>Show information about Lytix Core</source>
-        <translation>Mostra informação sobre o Lytix Core</translation>
+        <source>Show information about LockChain Core</source>
+        <translation>Mostra informação sobre o LockChain Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lytix</source>
-        <translation>Modificar opções de configuração para Lytix</translation>
+        <source>Modify configuration options for LockChain</source>
+        <translation>Modificar opções de configuração para LockChain</translation>
     </message>
     <message>
-        <source>Sign messages with your Lytix addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços Lytix para provar que você os detém</translation>
+        <source>Sign messages with your LockChain addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços LockChain para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lytix addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços Lytix especificados</translation>
+        <source>Verify messages to ensure they were signed with specified LockChain addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços LockChain especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -654,8 +654,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a Lytix: URI or payment request</source>
-        <translation>Abrir um Lytix: URI ou requisição de pagamento</translation>
+        <source>Open a LockChain: URI or payment request</source>
+        <translation>Abrir um LockChain: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -666,12 +666,12 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the Lytix Core help message to get a list with possible Lytix command-line options</source>
-        <translation>Mostra a ajuda da Lytix Core para receber uma lista com possíveis opções de linha de comando Lytix</translation>
+        <source>Show the LockChain Core help message to get a list with possible LockChain command-line options</source>
+        <translation>Mostra a ajuda da LockChain Core para receber uma lista com possíveis opções de linha de comando LockChain</translation>
     </message>
     <message>
-        <source>Lytix Core client</source>
-        <translation>Cliente Core Lytix</translation>
+        <source>LockChain Core client</source>
+        <translation>Cliente Core LockChain</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -806,8 +806,8 @@ MultiSend: %1</translation>
         <translation>Rótulo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (lytix.conf).</source>
-        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (lytix.conf). </translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (lockchain.conf).</source>
+        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (lockchain.conf). </translation>
     </message>
 </context>
 <context>
@@ -1087,8 +1087,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lytix address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de Lytix</translation>
+        <source>The entered address "%1" is not a valid LockChain address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de LockChain</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1133,16 +1133,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Lytix Core</source>
-        <translation>Sobre o Lytix Core</translation>
+        <source>About LockChain Core</source>
+        <translation>Sobre o LockChain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1176,16 +1176,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to Lytix Core.</source>
-        <translation>Bem-vindo ao Lytix Core.</translation>
+        <source>Welcome to LockChain Core.</source>
+        <translation>Bem-vindo ao LockChain Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Lytix Core will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Lytix Core vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where LockChain Core will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde LockChain Core vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>Lytix Core will download and store a copy of the Lytix block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Lytix Core vai baixar e armazenar uma cópia da blockchain Lytix. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>LockChain Core will download and store a copy of the LockChain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>LockChain Core vai baixar e armazenar uma cópia da blockchain LockChain. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1196,8 +1196,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1484,16 +1484,16 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Configuração de ofuscação</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Lytix's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Lytix's.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening LockChain's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela LockChain's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Lytix's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Lytix's.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening LockChain's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela LockChain's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Lytix's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Lytix's.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening LockChain's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela LockChain's.</translation>
     </message>
 </context>
 <context>
@@ -1546,8 +1546,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the Lytix client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente Lytix no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the LockChain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente LockChain no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1566,12 +1566,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Lytix after logging in to the system.</source>
-        <translation>Iniciar automaticamente Lytix depois de logar no sistema.</translation>
+        <source>Automatically start LockChain after logging in to the system.</source>
+        <translation>Iniciar automaticamente LockChain depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Lytix on system login</source>
-        <translation>&amp;Iniciar Lytix ao logar no sistema</translation>
+        <source>&amp;Start LockChain on system login</source>
+        <translation>&amp;Iniciar LockChain ao logar no sistema</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1586,18 +1586,18 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lytix.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do Lytix.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting LockChain.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do LockChain.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/lytix-project/lytix-project-translations</source>
+https://www.transifex.com/lockchain-project/lockchain-project-translations</source>
         <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
-https://www.transifex.com/lytix-project/lytix-project-translations</translation>
+https://www.transifex.com/lockchain-project/lockchain-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the Lytix network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede Lytix através de um proxy SOCKS5</translation>
+        <source>Connect to the LockChain network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede LockChain através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1731,8 +1731,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Imaturo:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lytix network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Lytix após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LockChain network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede LockChain após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1820,8 +1820,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lytix network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Lytix após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LockChain network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede LockChain após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>0</source>
@@ -1927,8 +1927,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a Lytix address (e.g. %1)</source>
-        <translation>Insira um endereço Lytix (e.g. %1)</translation>
+        <source>Enter a LockChain address (e.g. %1)</source>
+        <translation>Insira um endereço LockChain (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2177,8 +2177,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the Lytix RPC console.</source>
-        <translation>Bem-vindo ao console da Lytix RPC</translation>
+        <source>Welcome to the LockChain RPC console.</source>
+        <translation>Bem-vindo ao console da LockChain RPC</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2473,8 +2473,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Se a taxa padrão estiver definida para 1000 uLYTXs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uLYTXs em taxa,&lt;br /&gt; pagará pelo menos 1000 uLYTXs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Lytix transactions than the network can process.</source>
-        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de Lytix do que a rede pode processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for LockChain transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de LockChain do que a rede pode processar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2561,8 +2561,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>fundos anônimos</translation>
     </message>
     <message>
-        <source>Warning: Invalid Lytix address</source>
-        <translation>Aviso: endereço Lytix inválido</translation>
+        <source>Warning: Invalid LockChain address</source>
+        <translation>Aviso: endereço LockChain inválido</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2656,8 +2656,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The Lytix address to send the payment to</source>
-        <translation>O endereço Lytix para enviar o pagamento</translation>
+        <source>The LockChain address to send the payment to</source>
+        <translation>O endereço LockChain para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2719,8 +2719,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Lytix Core is shutting down...</source>
-        <translation>Lytix Core está desligando...</translation>
+        <source>LockChain Core is shutting down...</source>
+        <translation>LockChain Core está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2738,8 +2738,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The Lytix address to sign the message with</source>
-        <translation>O endereço Lytix para assinar a mensagem</translation>
+        <source>The LockChain address to sign the message with</source>
+        <translation>O endereço LockChain para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2770,16 +2770,16 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lytix address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço Lytix</translation>
+        <source>Sign the message to prove you own this LockChain address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço LockChain</translation>
     </message>
     <message>
-        <source>The Lytix address the message was signed with</source>
-        <translation>O endereço Lytix que assinou a mensagem</translation>
+        <source>The LockChain address the message was signed with</source>
+        <translation>O endereço LockChain que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lytix address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Lytix especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified LockChain address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço LockChain especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2861,8 +2861,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2877,8 +2877,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The Lytix Core developers</source>
-        <translation>Os desenvolvedores do Lytix Core</translation>
+        <source>The LockChain Core developers</source>
+        <translation>Os desenvolvedores do LockChain Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3405,21 +3405,21 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>ZLytixControlDialog</name>
+    <name>ZLockChainControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>lytix-core</name>
+    <name>lockchain-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all Lytix specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionalidades específicas Lytix (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
+        <source>Disable all LockChain specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionalidades específicas LockChain (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -3478,8 +3478,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Lytix Core will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core Lytix não vai funcionar corretamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong LockChain Core will not work properly.</source>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core LockChain não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3494,8 +3494,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(27071 could be used only on mainnet)</source>
-        <translation>(27071 could be used only on mainnet)</translation>
+        <source>(17071 could be used only on mainnet)</source>
+        <translation>(17071 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3506,8 +3506,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 27071 for mainnet)</source>
-        <translation>(deve ser 27071 para mainnet)</translation>
+        <source>(must be 17071 for mainnet)</source>
+        <translation>(deve ser 17071 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
@@ -3562,8 +3562,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2018-%i The Lytix Core Developers</source>
-        <translation>Copyright (C) 2018-%i The Lytix Core Developers</translation>
+        <source>Copyright (C) 2018-%i The LockChain Core Developers</source>
+        <translation>Copyright (C) 2018-%i The LockChain Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3614,8 +3614,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Lytix Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Lytix Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of LockChain Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da LockChain Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4094,8 +4094,8 @@ https://www.transifex.com/lytix-project/lytix-project-translations</translation>
         <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Lytix Core to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o Lytix Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart LockChain Core to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o LockChain Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

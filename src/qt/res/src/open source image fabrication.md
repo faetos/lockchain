@@ -1,15 +1,15 @@
-Processing path for Lytix H logo.
+Processing path for LockChain H logo.
 
-Primary source is vector serialisation in `lytix-h-74ade8ff.svg`, exported as 1024 x 1024 `PNG` format to `lytix-h-74ade8ff.png`
+Primary source is vector serialisation in `lockchain-h-74ade8ff.svg`, exported as 1024 x 1024 `PNG` format to `lockchain-h-74ade8ff.png`
 
-Copy `lytix-h-74ade8ff.png` to `lytix-1024x1024.png`, then ...
+Copy `lockchain-h-74ade8ff.png` to `lockchain-1024x1024.png`, then ...
 
 ```
 #!/bin/sh
 for b in 16 20 24 30 32 36 40 48 60 64 72 80 96 128 256 320 384 512
 do
-convert lytix-1024x1024.png -resize ${b}x${b} bitcoin${b}.png
-convert lytix-1024x1024.png -resize ${b}x${b} bitcoin${b}.xpm
+convert lockchain-1024x1024.png -resize ${b}x${b} bitcoin${b}.png
+convert lockchain-1024x1024.png -resize ${b}x${b} bitcoin${b}.xpm
 done
 ```
 
@@ -24,7 +24,7 @@ icotool -c bitcoin*.png -o favicon.ico
 
 Creating an OS X `ICNS` format file is a matter of collating the resized images into a single resource:
 
-Create the png set by resizing `lytix-1024x1024.png` according to the following specification, in which `x2` means "twice the size" - if `icon_16x16.png` is 16 pixels x 16 pixels, the `x2` file will the same image resized to 32 pixels (16 * 2) x 32 pixels (16 * 2):
+Create the png set by resizing `lockchain-1024x1024.png` according to the following specification, in which `x2` means "twice the size" - if `icon_16x16.png` is 16 pixels x 16 pixels, the `x2` file will the same image resized to 32 pixels (16 * 2) x 32 pixels (16 * 2):
 
 ```
 icon_16x16.png

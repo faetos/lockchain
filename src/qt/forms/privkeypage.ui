@@ -14,13 +14,13 @@
    <item>
        <widget class="QValidatedLineEdit" name="payTo">
         <property name="toolTip">
-         <string>The Lytix address to send the payment to</string>
+         <string>The LockChain address to send the payment to</string>
         </property>
         <property name="inputMask">
          <string/>
         </property>
 		    <property name="placeholderText">
-         <string>Enter a Lytix address (e.g. 8kpnwJeLosePqhGQbSgkSJU3j38uWPYr5p)</string>
+         <string>Enter a LockChain address (e.g. 8kpnwJeLosePqhGQbSgkSJU3j38uWPYr5p)</string>
         </property>
        </widget>
       </item>
@@ -35,7 +35,7 @@
         <string>&amp;Copy</string>
        </property>
        <property name="icon">
-        <iconset resource="../lytix.qrc">
+        <iconset resource="../lockchain.qrc">
          <normaloff>:/icons/editcopy</normaloff>:/icons/editcopy</iconset>
        </property>
        <property name="autoDefault">
@@ -60,7 +60,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../lytix.qrc"/>
+  <include location="../lockchain.qrc"/>
  </resources>
  <connections/>
 </ui>

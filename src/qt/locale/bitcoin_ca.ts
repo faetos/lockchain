@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
-        <source>&amp;About Lytix Core</source>
-        <translation>&amp;Sobre Lytix Core</translation>
+        <source>&amp;About LockChain Core</source>
+        <translation>&amp;Sobre LockChain Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
-        <source>About Lytix Core</source>
-        <translation>Sobre Lytix Core</translation>
+        <source>About LockChain Core</source>
+        <translation>Sobre LockChain Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Lytix Core.</source>
-        <translation>Benvingut a Lytix Core.</translation>
+        <source>Welcome to LockChain Core.</source>
+        <translation>Benvingut a LockChain Core.</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1147,8 +1147,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1307,10 +1307,10 @@
     </message>
     </context>
 <context>
-    <name>ZLytixControlDialog</name>
+    <name>ZLockChainControlDialog</name>
     </context>
 <context>
-    <name>lytix-core</name>
+    <name>lockchain-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

@@ -1,5 +1,5 @@
 ---
-name: "lytix-linux-2.1.0"
+name: "lockchain-linux-2.1.0"
 enable_cache: true
 distro: "ubuntu"
 suites:
@@ -31,8 +31,8 @@ packages:
 - "python3"
 
 remotes:
-- "url": "https://github.com/lytixchain/lytix.git"
-  "dir": "lytix"
+- "url": "https://github.com/lockchainchain/lockchain.git"
+  "dir": "lockchain"
 files: []
 script: |
   set -e -o pipefail
@@ -95,7 +95,7 @@ script: |
   EXTRA_INCLUDES_BASE=$WRAP_DIR/extra_includes
   mkdir -p $EXTRA_INCLUDES_BASE
 
-  cd lytix
+  cd lockchain
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -117,13 +117,13 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
-  SOURCEDIST=`echo lytix-*.tar.gz`
+  SOURCEDIST=`echo lockchain-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-  find lytix-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
+  find lockchain-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
   popd
 
   # Workaround for tarball not building with the bare tag version (prep)

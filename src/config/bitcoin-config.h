@@ -284,16 +284,16 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.lytixchain.org"
+#define PACKAGE_BUGREPORT "www.lockchainchain.org"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Lytix Core"
+#define PACKAGE_NAME "LockChain Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Lytix Core 1.7.3"
+#define PACKAGE_STRING "LockChain Core 1.7.3"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "lytix"
+#define PACKAGE_TARNAME "lockchain"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""

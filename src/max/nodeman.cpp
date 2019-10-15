@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2019 The Lytix developer
+// Copyright (c) 2019 The LockChain developer
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -926,8 +926,8 @@ void CMaxnodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CDataStr
         }
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (addr.GetPort() != 27071) return;
-        } else if (addr.GetPort() == 27071)
+            if (addr.GetPort() != 17071) return;
+        } else if (addr.GetPort() == 17071)
             return;
 
         //search existing Maxnode list, this is where we update existing Maxnodes with new dmaxsee broadcasts

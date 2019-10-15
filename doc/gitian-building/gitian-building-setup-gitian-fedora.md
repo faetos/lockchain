@@ -71,13 +71,13 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user `gitianuser` not for `root`.
 
-Clone the git repositories for lytix and Gitian.
+Clone the git repositories for lockchain and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/lytixchain/lytix
-git clone https://github.com/lytixchain/gitian.sigs.git
-git clone https://github.com/lytixchain/lytix-detached-sigs.git
+git clone https://github.com/lockchainchain/lockchain
+git clone https://github.com/lockchainchain/gitian.sigs.git
+git clone https://github.com/lockchainchain/lockchain-detached-sigs.git
 ```
 
 Setting up the Gitian image

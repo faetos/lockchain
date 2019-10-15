@@ -583,9 +583,9 @@ public:
     {
         OptionsDialog->setWindowTitle(QApplication::translate("OptionsDialog", "Options", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start Lytix after logging in to the system.", Q_NULLPTR));
+        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start LockChain after logging in to the system.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start Lytix on system login", Q_NULLPTR));
+        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start LockChain on system login", Q_NULLPTR));
         databaseCacheLabel->setText(QApplication::translate("OptionsDialog", "Size of &database cache", Q_NULLPTR));
         databaseCacheUnitLabel->setText(QApplication::translate("OptionsDialog", "MB", Q_NULLPTR));
         threadsScriptVerifLabel->setText(QApplication::translate("OptionsDialog", "Number of script &verification threads", Q_NULLPTR));
@@ -613,7 +613,7 @@ public:
         spendZeroConfChange->setText(QApplication::translate("OptionsDialog", "&Spend unconfirmed change", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tabWallet), QApplication::translate("OptionsDialog", "W&allet", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the Lytix client port on the router. This only works when your router supports UPnP and it is enabled.", Q_NULLPTR));
+        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the LockChain client port on the router. This only works when your router supports UPnP and it is enabled.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         mapPortUpnp->setText(QApplication::translate("OptionsDialog", "Map port using &UPnP", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
@@ -621,7 +621,7 @@ public:
 #endif // QT_NO_TOOLTIP
         allowIncoming->setText(QApplication::translate("OptionsDialog", "Allow incoming connections", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the Lytix network through a SOCKS5 proxy.", Q_NULLPTR));
+        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the LockChain network through a SOCKS5 proxy.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         connectSocks->setText(QApplication::translate("OptionsDialog", "&Connect through SOCKS5 proxy (default proxy):", Q_NULLPTR));
         proxyIpLabel->setText(QApplication::translate("OptionsDialog", "Proxy &IP:", Q_NULLPTR));
@@ -644,10 +644,10 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tabWindow), QApplication::translate("OptionsDialog", "&Window", Q_NULLPTR));
         langLabel->setText(QApplication::translate("OptionsDialog", "User Interface &language:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting Lytix.", Q_NULLPTR));
+        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting LockChain.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         label_3->setText(QApplication::translate("OptionsDialog", "Language missing or translation incomplete? Help contributing translations here:\n"
-"https://www.transifex.com/lytix-project/lytix-project-translations", Q_NULLPTR));
+"https://www.transifex.com/lockchain-project/lockchain-project-translations", Q_NULLPTR));
         themeLabel->setText(QApplication::translate("OptionsDialog", "User Interface Theme:", Q_NULLPTR));
         unitLabel->setText(QApplication::translate("OptionsDialog", "&Unit to show amounts in:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP

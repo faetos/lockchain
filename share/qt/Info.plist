@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>1.7.0, Copyright © 2009-2018 The Bitcoin Core developers, 2014-2018 The Dash Core developers, 2015-2018 The PIVX Core developers, 2018-2019 The Lytix Core developers</string>
+  <string>1.7.0, Copyright © 2009-2018 The Bitcoin Core developers, 2014-2018 The Dash Core developers, 2015-2018 The PIVX Core developers, 2018-2019 The LockChain Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>1.5.0</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Lytix-Qt</string>
+  <string>LockChain-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Lytix-Qt</string>
+  <string>LockChain-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.lytix.Lytix-Qt</string>
+  <string>io.lockchain.LockChain-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.lytix.LytixPayment</string>
+      <string>io.lockchain.LockChainPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>lytix</string>
+        <string>lockchain</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.lytix.paymentrequest</string>
+      <string>io.lockchain.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Lytix payment request</string>
+      <string>LockChain payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-lytix-payment-request</string>
+        <string>application/x-lockchain-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>lytixmentrequest</string>
+          <string>lockchainmentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.lytix.paymentrequest</string>
+        <string>io.lockchain.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

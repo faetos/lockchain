@@ -1,9 +1,9 @@
 Gitian building
 ================
 
-*Setup instructions for a Gitian build of Lytix Core using a VM or physical system.*
+*Setup instructions for a Gitian build of LockChain Core using a VM or physical system.*
 
-Gitian is the deterministic build process that is used to build the Lytix
+Gitian is the deterministic build process that is used to build the LockChain
 Core executables. It provides a way to be reasonably sure that the
 executables are really built from the git source. It also makes sure that
 the same, tested dependencies are used and statically built into the executable.
@@ -22,7 +22,7 @@ Table of Contents
 
 - [Preparing the Gitian builder host](#preparing-the-gitian-builder-host)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Lytix Core](#building-bitcoin-core)
+- [Building LockChain Core](#building-bitcoin-core)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -51,7 +51,7 @@ Please refer to the following documents to set up the operating systems and Giti
 
 Non-Debian / Ubuntu, Manual and Offline Building
 ------------------------------------------------
-The instructions below use the automated script [gitian-build.py](https://github.com/lytixchain/lytix/blob/master/contrib/gitian-build.py) which only works in Debian/Ubuntu. For manual steps and instructions for fully offline signing, see [this guide](./gitian-building/gitian-building-manual.md).
+The instructions below use the automated script [gitian-build.py](https://github.com/lockchainchain/lockchain/blob/master/contrib/gitian-build.py) which only works in Debian/Ubuntu. For manual steps and instructions for fully offline signing, see [this guide](./gitian-building/gitian-building-manual.md).
 
 MacOS code signing
 ------------------
@@ -62,7 +62,7 @@ Initial Gitian Setup
 The `gitian-build.py` script will checkout different release tags, so it's best to copy it:
 
 ```bash
-cp lytix/contrib/gitian-build.py .
+cp lockchain/contrib/gitian-build.py .
 ```
 
 You only need to do this once:
@@ -76,7 +76,7 @@ Where `bubba` is your Github name and `0.14.9` is the most recent tag (without `
 In order to sign gitian builds on your host machine, which has your PGP key, fork the gitian.sigs repository and clone it on your host machine:
 
 ```
-git clone git@github.com:lytixchain/gitian.sigs.git
+git clone git@github.com:lockchainchain/gitian.sigs.git
 git remote add bubba git@github.com:bubba/gitian.sigs.git
 ```
 
@@ -98,13 +98,13 @@ You need to copy these uncommited changes to your host machine, where you can si
 export NAME=bubba
 export VERSION=0.14.9.2
 export BUILD=0.14.9
-gpg --output $VERSION-linux/$NAME/lytix-linux-$BUILD-build.assert.sig --detach-sig $VERSION-linux/$NAME/bitcoin-linux-$BUILD-build.assert 
-gpg --output $VERSION-osx-unsigned/$NAME/lytix-osx-$BUILD-build.assert.sig --detach-sig 0$VERSION-osx-unsigned/$NAME/bitcoin-osx-$BUILD-build.assert 
-gpg --output $VERSION-win-unsigned/$NAME/lytix-win-$BUILD-build.assert.sig --detach-sig $VERSION-win-unsigned/$NAME/bitcoin-win-$BUILD-build.assert 
+gpg --output $VERSION-linux/$NAME/lockchain-linux-$BUILD-build.assert.sig --detach-sig $VERSION-linux/$NAME/bitcoin-linux-$BUILD-build.assert 
+gpg --output $VERSION-osx-unsigned/$NAME/lockchain-osx-$BUILD-build.assert.sig --detach-sig 0$VERSION-osx-unsigned/$NAME/bitcoin-osx-$BUILD-build.assert 
+gpg --output $VERSION-win-unsigned/$NAME/lockchain-win-$BUILD-build.assert.sig --detach-sig $VERSION-win-unsigned/$NAME/bitcoin-win-$BUILD-build.assert 
 ```
 
 Make a PR (both the `.assert` and `.assert.sig` files) to the
-[lytixchain/gitian.sigs](https://github.com/lytixchain/gitian.sigs/) repository:
+[lockchainchain/gitian.sigs](https://github.com/lockchainchain/gitian.sigs/) repository:
 
 ```
 git checkout -b 0.14.9-not-codesigned
@@ -115,9 +115,9 @@ git push --set-upstream $NAME 0.14.9
 You can also mail the files to faetos (faetos@protonmail.com) and he will commit them.
 
 ```bash
-    gpg --detach-sign ${VERSION}-linux/${SIGNER}/lytix-linux-*-build.assert
-    gpg --detach-sign ${VERSION}-win-unsigned/${SIGNER}/lytix-win-*-build.assert
-    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/lytix-osx-*-build.assert
+    gpg --detach-sign ${VERSION}-linux/${SIGNER}/lockchain-linux-*-build.assert
+    gpg --detach-sign ${VERSION}-win-unsigned/${SIGNER}/lockchain-win-*-build.assert
+    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/lockchain-osx-*-build.assert
 ```
 
 You may have other .assert files as well (e.g. `signed` ones), in which case you should sign them too. You can see all of them by doing `ls ${VERSION}-*/${SIGNER}`.

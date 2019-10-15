@@ -49,7 +49,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../lytix.qrc"/>
+  <include location="../lockchain.qrc"/>
  </resources>
  <connections/>
 </ui>

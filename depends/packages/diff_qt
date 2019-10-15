@@ -42,14 +42,14 @@
 ---
 > $(package)_config_opts_linux += -no-sm
 105c99,100
-< $(package)_config_opts_arm_linux += -platform linux-g++ -xplatform lytix-linux-g++
+< $(package)_config_opts_arm_linux += -platform linux-g++ -xplatform lockchain-linux-g++
 ---
 > $(package)_config_opts_arm_linux  = -platform linux-g++ -xplatform $(host)
 > $(package)_config_opts_aarch64_linux = -platform linux-g++ -xplatform $(host)
 107,109d101
 < $(package)_config_opts_x86_64_linux = -xplatform linux-g++-64
 < $(package)_config_opts_aarch64_linux = -xplatform linux-aarch64-gnu-g++
-< $(package)_config_opts_riscv64_linux = -platform linux-g++ -xplatform lytix-linux-g++
+< $(package)_config_opts_riscv64_linux = -platform linux-g++ -xplatform lockchain-linux-g++
 112d103
 < $(package)_build_env += QT_RCC_SOURCE_DATE_OVERRIDE=1
 134a126
@@ -61,8 +61,8 @@
 ---
 >   sed -i.old "s/src_plugins.depends = src_sql src_xml src_network/src_plugins.depends = src_xml src_network/" qtbase/src/src.pro && \
 148,154c139,148
-<   cp -r qtbase/mkspecs/linux-arm-gnueabi-g++ qtbase/mkspecs/lytix-linux-g++ && \
-<   sed -i.old "s/arm-linux-gnueabi-/$(host)-/g" qtbase/mkspecs/lytix-linux-g++/qmake.conf && \
+<   cp -r qtbase/mkspecs/linux-arm-gnueabi-g++ qtbase/mkspecs/lockchain-linux-g++ && \
+<   sed -i.old "s/arm-linux-gnueabi-/$(host)-/g" qtbase/mkspecs/lockchain-linux-g++/qmake.conf && \
 <   patch -p1 -i $($(package)_patch_dir)/fix_qt_pkgconfig.patch &&\
 <   patch -p1 -i $($(package)_patch_dir)/fix_configure_mac.patch &&\
 <   patch -p1 -i $($(package)_patch_dir)/fix_no_printer.patch &&\
@@ -132,16 +132,16 @@
 < $(package)_config_opts += -no-feature-udpsocket
 < $(package)_config_opts += -no-feature-wizard
 105c93
-< $(package)_config_opts_arm_linux += -platform linux-g++ -xplatform lytix-linux-g++
+< $(package)_config_opts_arm_linux += -platform linux-g++ -xplatform lockchain-linux-g++
 ---
 > $(package)_config_opts_arm_linux += -platform linux-g++ -xplatform bitcoin-linux-g++
 109c97
-< $(package)_config_opts_riscv64_linux = -platform linux-g++ -xplatform lytix-linux-g++
+< $(package)_config_opts_riscv64_linux = -platform linux-g++ -xplatform lockchain-linux-g++
 ---
 > $(package)_config_opts_riscv64_linux = -platform linux-g++ -xplatform bitcoin-linux-g++
 148,149c136,137
-<   cp -r qtbase/mkspecs/linux-arm-gnueabi-g++ qtbase/mkspecs/lytix-linux-g++ && \
-<   sed -i.old "s/arm-linux-gnueabi-/$(host)-/g" qtbase/mkspecs/lytix-linux-g++/qmake.conf && \
+<   cp -r qtbase/mkspecs/linux-arm-gnueabi-g++ qtbase/mkspecs/lockchain-linux-g++ && \
+<   sed -i.old "s/arm-linux-gnueabi-/$(host)-/g" qtbase/mkspecs/lockchain-linux-g++/qmake.conf && \
 ---
 >   cp -r qtbase/mkspecs/linux-arm-gnueabi-g++ qtbase/mkspecs/bitcoin-linux-g++ && \
 >   sed -i.old "s/arm-linux-gnueabi-/$(host)-/g" qtbase/mkspecs/bitcoin-linux-g++/qmake.conf && \

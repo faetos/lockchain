@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your Lytix addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi Lytix per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your LockChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi LockChain per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your Lytix addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi Lytix per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your LockChain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi LockChain per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>Lytix will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
-        <translation>Lytix verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi LYTX dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>LockChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
+        <translation>LockChain verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi LYTX dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Criptato</translation>
     </message>
     <message>
-        <source>Enter a Lytix Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserisci un indirizzo Lytix che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
+        <source>Enter a LockChain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserisci un indirizzo LockChain che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>The Lytix address to sign the message with</source>
-        <translation>L'indirizzo Lytix per firmare il messaggio con</translation>
+        <source>The LockChain address to sign the message with</source>
+        <translation>L'indirizzo LockChain per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lytix address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Lytix</translation>
+        <source>Sign the message to prove you own this LockChain address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo LockChain</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Immettere la chiave privata codificata BIP 38. Inserire la passphrase nella casella centrale. Fare clic su Decripta Chiave per calcolare la chiave privata. Dopo che la chiave viene decrittata, cliccando su "Importa indirizzo" verrà aggiunta questa chiave privata al portafoglio.</translation>
     </message>
     <message>
-        <source>The Lytix address the message was signed with</source>
-        <translation>L'indirizzo Lytix con cui è stato firmato il messaggio</translation>
+        <source>The LockChain address the message was signed with</source>
+        <translation>L'indirizzo LockChain con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lytix address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Lytix specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified LockChain address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo LockChain specificato </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -590,16 +590,16 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
-        <source>Send coins to a Lytix address</source>
-        <translation>Invia monete all' indirizzo Lytix</translation>
+        <source>Send coins to a LockChain address</source>
+        <translation>Invia monete all' indirizzo LockChain</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and lytix: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e lytix: URIs)</translation>
+        <source>Request payments (generates QR codes and lockchain: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e lockchain: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -610,24 +610,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Lytix Core</source>
-        <translation>&amp;Informazioni Lytix Core</translation>
+        <source>&amp;About LockChain Core</source>
+        <translation>&amp;Informazioni LockChain Core</translation>
     </message>
     <message>
-        <source>Show information about Lytix Core</source>
-        <translation>Visualizza informazioni su Lytix Core</translation>
+        <source>Show information about LockChain Core</source>
+        <translation>Visualizza informazioni su LockChain Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lytix</source>
-        <translation>Modifica le opzioni di configurazione per Lytix</translation>
+        <source>Modify configuration options for LockChain</source>
+        <translation>Modifica le opzioni di configurazione per LockChain</translation>
     </message>
     <message>
-        <source>Sign messages with your Lytix addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi Lytix per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your LockChain addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi LockChain per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lytix addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi Lytix specifici</translation>
+        <source>Verify messages to ensure they were signed with specified LockChain addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi LockChain specifici</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
@@ -638,16 +638,16 @@
         <translation>Impostazioni MultiSend</translation>
     </message>
     <message>
-        <source>Open a Lytix: URI or payment request</source>
-        <translation>Apri un Lytix: URI o richiesta di pagamento</translation>
+        <source>Open a LockChain: URI or payment request</source>
+        <translation>Apri un LockChain: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>Block explorer window</source>
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the Lytix Core help message to get a list with possible Lytix command-line options</source>
-        <translation>Mostra il messaggio di aiuto Lytix Core per ottenere un elenco con le possibili opzioni di riga di comando Lytix</translation>
+        <source>Show the LockChain Core help message to get a list with possible LockChain command-line options</source>
+        <translation>Mostra il messaggio di aiuto LockChain Core per ottenere un elenco con le possibili opzioni di riga di comando LockChain</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -753,8 +753,8 @@ MultiSend: %1</translation>
         <translation>Cerca</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (lytix.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (lytix.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (lockchain.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (lockchain.conf)</translation>
     </message>
 </context>
 <context>
@@ -888,8 +888,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -915,8 +915,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1144,8 +1144,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Lytix address to sign the message with</source>
-        <translation>L'indirizzo Lytix per firmare il messaggio con</translation>
+        <source>The LockChain address to sign the message with</source>
+        <translation>L'indirizzo LockChain per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1168,16 +1168,16 @@ MultiSend: %1</translation>
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lytix address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Lytix</translation>
+        <source>Sign the message to prove you own this LockChain address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo LockChain</translation>
     </message>
     <message>
-        <source>The Lytix address the message was signed with</source>
-        <translation>L'indirizzo Lytix con cui è stato firmato il messaggio</translation>
+        <source>The LockChain address the message was signed with</source>
+        <translation>L'indirizzo LockChain con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lytix address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Lytix specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified LockChain address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo LockChain specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1215,8 +1215,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lytix Core</source>
-        <translation>Lytix Core</translation>
+        <source>LockChain Core</source>
+        <translation>LockChain Core</translation>
     </message>
     </context>
 <context>
@@ -1311,10 +1311,10 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZLytixControlDialog</name>
+    <name>ZLockChainControlDialog</name>
     </context>
 <context>
-    <name>lytix-core</name>
+    <name>lockchain-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

@@ -38,17 +38,17 @@ from the root of the repository.
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see [*Disable-wallet mode*](/doc/build-osx.md#disable-wallet-mode)).
 
-Build Lytix Core
+Build LockChain Core
 ------------------------
 
-1. Clone the Lytix Core source code:
+1. Clone the LockChain Core source code:
 
-        git clone https://github.com/lytixchain/lytix
-        cd lytix
+        git clone https://github.com/lockchainchain/lockchain
+        cd lockchain
 
-2.  Build Lytix Core:
+2.  Build LockChain Core:
 
-    Configure and build the headless Lytix Core binaries as well as the GUI (if Qt is found).
+    Configure and build the headless LockChain Core binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -76,7 +76,7 @@ Build Lytix Core
 
 Disable-wallet mode
 --------------------
-When the intention is to run only a P2P node without a wallet, Lytix Core may be compiled in
+When the intention is to run only a P2P node without a wallet, LockChain Core may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet
@@ -88,33 +88,33 @@ Mining is also possible in disable-wallet mode using the `getblocktemplate` RPC 
 Running
 -------
 
-Lytix Core is now available at `./src/lytixd`
+LockChain Core is now available at `./src/lockchaind`
 
 Before running, you may create an empty configuration file:
 
-    touch "/Users/${USER}/Library/Application Support/Lytix/lytix.conf"
+    touch "/Users/${USER}/Library/Application Support/LockChain/lockchain.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Lytix/lytix.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/LockChain/lockchain.conf"
 
-The first time you run lytixd, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
+The first time you run lockchaind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Lytix/debug.log
+    tail -f $HOME/Library/Application\ Support/LockChain/debug.log
 
 Other commands:
 -------
 
-    ./src/lytixd -daemon # Starts the lytix daemon.
-    ./src/lytix-cli --help # Outputs a list of command-line options.
-    ./src/lytix-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/lockchaind -daemon # Starts the lockchain daemon.
+    ./src/lockchain-cli --help # Outputs a list of command-line options.
+    ./src/lockchain-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Notes
 -----
 
 * Tested on OS X 10.10 Yosemite through macOS 10.13 High Sierra on 64-bit Intel processors only.
 
-* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/lytixchain/lytix/issues/7714)
+* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/lockchainchain/lockchain/issues/7714)
 
 Deterministic macOS DMG Notes
 -----------------------------
@@ -211,7 +211,7 @@ build process to remain somewhat deterministic. Here's how it works:
   that have been previously (deterministically) built in order to create a
   final dmg.
 - The Apple keyholder uses this unsigned app to create a detached signature,
-  using the script that is also included there. Detached signatures are available from this [repository](https://github.com/lytixchain-core/lytix-detached-sigs).
+  using the script that is also included there. Detached signatures are available from this [repository](https://github.com/lockchainchain-core/lockchain-detached-sigs).
 - Builders feed the unsigned app + detached signature back into Gitian. It
   uses the pre-built tools to recombine the pieces into a deterministic dmg.
 

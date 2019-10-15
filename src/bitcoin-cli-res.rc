@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Lytix"
-            VALUE "FileDescription",    "lytix-cli (OSS RPC client for Lytix)"
+            VALUE "CompanyName",        "LockChain"
+            VALUE "FileDescription",    "lockchain-cli (OSS RPC client for LockChain)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "lytix-cli"
+            VALUE "InternalName",       "lockchain-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "lytix-cli.exe"
-            VALUE "ProductName",        "lytix-cli"
+            VALUE "OriginalFilename",   "lockchain-cli.exe"
+            VALUE "ProductName",        "lockchain-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

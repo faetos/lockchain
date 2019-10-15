@@ -1,7 +1,7 @@
 Lock Chain Core repository
 =====================================
 
-[![Build Status](https://travis-ci.org/LytixChain/lytix.png)](https://travis-ci.org/LytixChain/lytix) [![GitHub tag](https://img.shields.io/github/tag/LytixChain/lytix.svg)](https://github.com/lytixchain/lytix/tree/v1.1.4)
+[![Build Status](https://travis-ci.org/LockChainChain/lockchain.png)](https://travis-ci.org/LockChainChain/lockchain) [![GitHub tag](https://img.shields.io/github/tag/LockChainChain/lockchain.svg)](https://github.com/lockchainchain/lockchain/tree/v1.1.4)
 
 Lock Chain is an open source crypto-currency focused on fast private transactions with low transaction fees & low confirmations.  It is currently in develpment as a proof of concept. 
 

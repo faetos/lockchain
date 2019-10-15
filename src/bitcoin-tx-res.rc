@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Lytix"
-            VALUE "FileDescription",    "lytix-tx (CLI Lytix transaction editor utility)"
+            VALUE "CompanyName",        "LockChain"
+            VALUE "FileDescription",    "lockchain-tx (CLI LockChain transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "lytix-tx"
+            VALUE "InternalName",       "lockchain-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "lytix-tx.exe"
-            VALUE "ProductName",        "lytix-tx"
+            VALUE "OriginalFilename",   "lockchain-tx.exe"
+            VALUE "ProductName",        "lockchain-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

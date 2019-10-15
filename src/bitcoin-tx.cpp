@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Lytix developers
+// Copyright (c) 2018 The LockChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -48,10 +48,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Lytix Core lytix-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("LockChain Core lockchain-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  lytix-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded lytix transaction") + "\n" +
-                               "  lytix-tx [options] -create [commands]   " + _("Create hex-encoded lytix transaction") + "\n" +
+                               "  lockchain-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded lockchain transaction") + "\n" +
+                               "  lockchain-tx [options] -create [commands]   " + _("Create hex-encoded lockchain transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

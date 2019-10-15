@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2019 The Lytix developers
+// Copyright (c) 2018-2019 The LockChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -29,7 +29,7 @@ UniValue getmaxpoolinfo(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "{\n"
-            "  \"current\": \"addr\",    (string) Lytix address of current maxnode\n"
+            "  \"current\": \"addr\",    (string) LockChain address of current maxnode\n"
             "  \"state\": xxxx,        (string) unknown\n"
             "  \"entries\": xxxx,      (numeric) Number of entries\n"
             "  \"accepted\": xxxx,     (numeric) Number of entries accepted\n"
@@ -73,7 +73,7 @@ UniValue maxnode(const UniValue& params, bool fHelp)
             "  debug        - Print maxnode status\n"
             "  genkey       - Generate new maxnodeprivkey\n"
             "  outputs      - Print maxnode compatible outputs\n"
-            "  start        - Start maxnode configured in lytix.conf\n"
+            "  start        - Start maxnode configured in lockchain.conf\n"
             "  start-alias  - Start single maxnode by assigned alias configured in maxnode.conf\n"
             "  start-<mode> - Start maxnodes configured in maxnode.conf (<mode>: 'all', 'missing', 'disabled')\n"
             "  status       - Print maxnode status information\n"
@@ -208,7 +208,7 @@ UniValue listmaxnodes(const UniValue& params, bool fHelp)
             "    \"txhash\": \"hash\",    (string) Collateral transaction hash\n"
             "    \"outidx\": n,         (numeric) Collateral transaction output index\n"
             "    \"status\": s,         (string) Status (ENABLED/EXPIRED/REMOVE/etc)\n"
-            "    \"addr\": \"addr\",      (string) Maxnode Lytix address\n"
+            "    \"addr\": \"addr\",      (string) Maxnode LockChain address\n"
             "    \"version\": v,        (numeric) Maxnode protocol version\n"
             "    \"lastseen\": ttt,     (numeric) The time in seconds since epoch (Jan 1 1970 GMT) of the last seen\n"
             "    \"activetime\": ttt,   (numeric) The time in seconds since epoch (Jan 1 1970 GMT) maxnode has been active\n"
@@ -690,7 +690,7 @@ UniValue getmaxnodestatus (const UniValue& params, bool fHelp)
             "  \"txhash\": \"xxxx\",      (string) Collateral transaction hash\n"
             "  \"outputidx\": n,        (numeric) Collateral transaction output index number\n"
             "  \"netaddr\": \"xxxx\",     (string) Maxnode network address\n"
-            "  \"addr\": \"xxxx\",        (string) Lytix address for maxnode payments\n"
+            "  \"addr\": \"xxxx\",        (string) LockChain address for maxnode payments\n"
             "  \"status\": \"xxxx\",      (string) Maxnode status\n"
             "  \"message\": \"xxxx\"      (string) Maxnode status message\n"
             "}\n"
@@ -733,7 +733,7 @@ UniValue getmaxnodewinners (const UniValue& params, bool fHelp)
             "  {\n"
             "    \"nHeight\": n,           (numeric) block height\n"
             "    \"winner\": {\n"
-            "      \"address\": \"xxxx\",    (string) Lytix MAX Address\n"
+            "      \"address\": \"xxxx\",    (string) LockChain MAX Address\n"
             "      \"nVotes\": n,          (numeric) Number of votes for winner\n"
             "    }\n"
             "  }\n"
@@ -746,7 +746,7 @@ UniValue getmaxnodewinners (const UniValue& params, bool fHelp)
             "    \"nHeight\": n,           (numeric) block height\n"
             "    \"winner\": [\n"
             "      {\n"
-            "        \"address\": \"xxxx\",  (string) Lytix MAX Address\n"
+            "        \"address\": \"xxxx\",  (string) LockChain MAX Address\n"
             "        \"nVotes\": n,        (numeric) Number of votes for winner\n"
             "      }\n"
             "      ,...\n"

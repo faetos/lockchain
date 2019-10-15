@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
 // Copyright (c) 2018 The Helium developers
-// Copyright (c) 2018-2019 The Lytix developer
+// Copyright (c) 2018-2019 The LockChain developer
 // Copyright (c) 2019 The LockChain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -170,16 +170,16 @@ public:
         pchMessageStart[3] = 0xb1;
         vAlertPubKey = ParseHex("0x"); // Disabled
         nDefaultPort = 10701;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Lytix starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // LockChain starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210240;
         nMaxReorganizationDepth = 1000;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Lytix: 1 day
-        //nTargetSpacing = 2 * 60;  // Lytix: 2 minutes
-        nTargetSpacing = 60;  // Lytix: 2 minutes
+        nTargetTimespan = 24 * 60 * 60; // LockChain: 1 day
+        //nTargetSpacing = 2 * 60;  // LockChain: 2 minutes
+        nTargetSpacing = 60;  // LockChain: 2 minutes
         nMaturity = 100;
         nMasternodeCountDrift = 20;
         nMaxnodeCountDrift = 20;
@@ -247,17 +247,17 @@ public:
         vSeeds.push_back(CDNSSeedData("dns2", "dns2.lockchain.org"));
 
 
-        // Lytix addresses start with '8 or 9'
+        // LockChain addresses start with '8 or 9'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,24);
-        // Lytix script addresses start with '3'
+        // LockChain script addresses start with '3'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,15);
-        // Lytix private keys start with '7' (uncompressed) or 'V' (compressed)
+        // LockChain private keys start with '7' (uncompressed) or 'V' (compressed)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,11);
-        // Lytix BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // LockChain BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // Lytix BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // LockChain BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // Lytix BIP44 coin type (pending BIP44-capable wallet, use Bitcoin type)
+        // LockChain BIP44 coin type (pending BIP44-capable wallet, use Bitcoin type)
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0xe2).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
@@ -317,15 +317,15 @@ public:
         pchMessageStart[2] = 0x5b;
         pchMessageStart[3] = 0x2c;
         vAlertPubKey = ParseHex("");
-        bnProofOfWorkLimit = ~uint256(0) >> 1; // 0x207fffff, Lytix testnet starting difficulty
+        bnProofOfWorkLimit = ~uint256(0) >> 1; // 0x207fffff, LockChain testnet starting difficulty
         nSubsidyHalvingInterval = 210240;
         nDefaultPort = 17072;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Lytix: 1 day
-        nTargetSpacing = 60;  // Lytix: 2 minute
+        nTargetTimespan = 24 * 60 * 60; // LockChain: 1 day
+        nTargetSpacing = 60;  // LockChain: 2 minute
         nLastPOWBlock = 250;
         nMaturity = 100;
         nMasternodeCountDrift = 2;
@@ -391,19 +391,19 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("testnet", "testnet.lytixchain.org"));
+        vSeeds.push_back(CDNSSeedData("testnet", "testnet.lockchainchain.org"));
 
-        // Testnet Lytix addresses start with 'X'
+        // Testnet LockChain addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,21);
-        // Testnet Lytix script addresses start with 'Y'
+        // Testnet LockChain script addresses start with 'Y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,47);
         // Testnet private keys start with 'X' (uncompressed) or 'c' (compressed)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,3);
-        // Testnet Lytix BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet LockChain BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Lytix BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet LockChain BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Lytix BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet LockChain BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -450,8 +450,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Lytix: 1 day
-        nTargetSpacing = 60;  // Lytix: 1 minute
+        nTargetTimespan = 24 * 60 * 60; // LockChain: 1 day
+        nTargetSpacing = 60;  // LockChain: 1 minute
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nDefaultPort = 17075;
 

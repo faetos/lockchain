@@ -82,11 +82,11 @@ noinst_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += lytixd
+  bin_PROGRAMS += lockchaind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += lytix-cli lytix-tx
+  bin_PROGRAMS += lockchain-cli lockchain-tx
 endif
 
 .PHONY: FORCE
@@ -217,7 +217,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between lytixd and lytix-qt
+# server: shared between lockchaind and lockchain-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -267,7 +267,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between lytixd and lytix-qt, but only linked
+# wallet: shared between lockchaind and lockchain-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -369,7 +369,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between lytixd, and lytix-qt and non-server tools
+# common: shared between lockchaind, and lockchain-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -446,7 +446,7 @@ if HARDEN
 	$(AM_V_at) READELF=$(READELF) OBJDUMP=$(OBJDUMP) $(PYTHON) $(top_srcdir)/contrib/devtools/security-check.py < $(bin_PROGRAMS)
 endif
 
-# cli: shared between lytix-cli and lytix-qt
+# cli: shared between lockchain-cli and lockchain-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -456,16 +456,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# lytixd binary #
-lytixd_SOURCES = bitcoind.cpp
-lytixd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-lytixd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-lytixd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# lockchaind binary #
+lockchaind_SOURCES = bitcoind.cpp
+lockchaind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+lockchaind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+lockchaind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-lytixd_SOURCES += bitcoind-res.rc
+lockchaind_SOURCES += bitcoind-res.rc
 endif
-lytixd_LDADD = \
+lockchaind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -478,38 +478,38 @@ lytixd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-lytixd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+lockchaind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# lytix-cli binary #
-lytix_cli_SOURCES = bitcoin-cli.cpp
-lytix_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-lytix_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-lytix_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# lockchain-cli binary #
+lockchain_cli_SOURCES = bitcoin-cli.cpp
+lockchain_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+lockchain_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+lockchain_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-lytix_cli_SOURCES += bitcoin-cli-res.rc
+lockchain_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-lytix_cli_LDADD = \
+lockchain_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-lytix_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+lockchain_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# lytix-tx binary #
-lytix_tx_SOURCES = bitcoin-tx.cpp
-lytix_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-lytix_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-lytix_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# lockchain-tx binary #
+lockchain_tx_SOURCES = bitcoin-tx.cpp
+lockchain_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+lockchain_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+lockchain_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-lytix_tx_SOURCES += bitcoin-tx-res.rc
+lockchain_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-lytix_tx_LDADD = \
+lockchain_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -517,7 +517,7 @@ lytix_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-lytix_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+lockchain_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

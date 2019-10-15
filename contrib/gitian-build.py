@@ -23,13 +23,13 @@ def setup():
         programs += ['lxc', 'debootstrap']
     subprocess.check_call(['sudo', 'apt-get', 'install', '-qq'] + programs)
     if not os.path.isdir('gitian.sigs'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/lytixchain/gitian.sigs.git'])
-    if not os.path.isdir('lytix-detached-sigs'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/lytixchain/lytix-detached-sigs.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/lockchainchain/gitian.sigs.git'])
+    if not os.path.isdir('lockchain-detached-sigs'):
+        subprocess.check_call(['git', 'clone', 'https://github.com/lockchainchain/lockchain-detached-sigs.git'])
     if not os.path.isdir('gitian-builder'):
         subprocess.check_call(['git', 'clone', 'https://github.com/devrandom/gitian-builder.git'])
-    if not os.path.isdir('lytix'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/lytixchain/lytix.git'])
+    if not os.path.isdir('lockchain'):
+        subprocess.check_call(['git', 'clone', 'https://github.com/lockchainchain/lockchain.git'])
     os.chdir('gitian-builder')
     make_image_prog = ['bin/make-base-vm', '--suite', 'bionic', '--arch', 'amd64']
     if args.docker:
@@ -46,7 +46,7 @@ def setup():
 def build():
     global args, workdir
 
-    os.makedirs('lytix-binaries/' + args.version, exist_ok=True)
+    os.makedirs('lockchain-binaries/' + args.version, exist_ok=True)
     print('\nBuilding Dependencies\n')
     os.chdir('gitian-builder')
     os.makedirs('inputs', exist_ok=True)
@@ -55,33 +55,33 @@ def build():
     subprocess.check_call(['wget', '-N', '-P', 'inputs', 'https://bitcoincore.org/cfields/osslsigncode-Backports-to-1.7.1.patch'])
     subprocess.check_call(["echo 'a8c4e9cafba922f89de0df1f2152e7be286aba73f78505169bc351a7938dd911 inputs/osslsigncode-Backports-to-1.7.1.patch' | sha256sum -c"], shell=True)
     subprocess.check_call(["echo 'f9a8cdb38b9c309326764ebc937cba1523a3a751a7ab05df3ecc99d18ae466c9 inputs/osslsigncode-1.7.1.tar.gz' | sha256sum -c"], shell=True)
-    subprocess.check_call(['make', '-C', '../lytix/depends', 'download', 'SOURCES_PATH=' + os.getcwd() + '/cache/common'])
+    subprocess.check_call(['make', '-C', '../lockchain/depends', 'download', 'SOURCES_PATH=' + os.getcwd() + '/cache/common'])
 
     if args.testlinux:
         print('\nCompiling ' + args.version + ' Test Linux')
-        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'lytix='+args.commit, '--url', 'lytix='+args.url, '../lytix/contrib/gitian-descriptors/gitian-test-linux.yml'])
-        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-testlinux', '--destination', '../gitian.sigs/', '../lytix/contrib/gitian-descriptors/gitian-test-linux.yml'])
-        subprocess.check_call('mv build/out/lytix-*.tar.gz build/out/src/lytix-*.tar.gz ../lytix-binaries/'+args.version, shell=True)
+        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'lockchain='+args.commit, '--url', 'lockchain='+args.url, '../lockchain/contrib/gitian-descriptors/gitian-test-linux.yml'])
+        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-testlinux', '--destination', '../gitian.sigs/', '../lockchain/contrib/gitian-descriptors/gitian-test-linux.yml'])
+        subprocess.check_call('mv build/out/lockchain-*.tar.gz build/out/src/lockchain-*.tar.gz ../lockchain-binaries/'+args.version, shell=True)
 
     if args.linux:
         print('\nCompiling ' + args.version + ' Linux')
-        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'lytix='+args.commit, '--url', 'lytix='+args.url, '../lytix/contrib/gitian-descriptors/gitian-linux.yml'])
-        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-linux', '--destination', '../gitian.sigs/', '../lytix/contrib/gitian-descriptors/gitian-linux.yml'])
-        subprocess.check_call('mv build/out/lytix-*.tar.gz build/out/src/lytix-*.tar.gz ../lytix-binaries/'+args.version, shell=True)
+        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'lockchain='+args.commit, '--url', 'lockchain='+args.url, '../lockchain/contrib/gitian-descriptors/gitian-linux.yml'])
+        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-linux', '--destination', '../gitian.sigs/', '../lockchain/contrib/gitian-descriptors/gitian-linux.yml'])
+        subprocess.check_call('mv build/out/lockchain-*.tar.gz build/out/src/lockchain-*.tar.gz ../lockchain-binaries/'+args.version, shell=True)
 
     if args.windows:
         print('\nCompiling ' + args.version + ' Windows')
-        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'lytix='+args.commit, '--url', 'lytix='+args.url, '../lytix/contrib/gitian-descriptors/gitian-win.yml'])
-        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-win-unsigned', '--destination', '../gitian.sigs/', '../lytix/contrib/gitian-descriptors/gitian-win.yml'])
-        subprocess.check_call('mv build/out/lytix-*-win-unsigned.tar.gz inputs/', shell=True)
-        subprocess.check_call('mv build/out/lytix-*.zip build/out/lytix-*.exe ../lytix-binaries/'+args.version, shell=True)
+        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'lockchain='+args.commit, '--url', 'lockchain='+args.url, '../lockchain/contrib/gitian-descriptors/gitian-win.yml'])
+        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-win-unsigned', '--destination', '../gitian.sigs/', '../lockchain/contrib/gitian-descriptors/gitian-win.yml'])
+        subprocess.check_call('mv build/out/lockchain-*-win-unsigned.tar.gz inputs/', shell=True)
+        subprocess.check_call('mv build/out/lockchain-*.zip build/out/lockchain-*.exe ../lockchain-binaries/'+args.version, shell=True)
 
     if args.macos:
         print('\nCompiling ' + args.version + ' MacOS')
-        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'lytix='+args.commit, '--url', 'lytix='+args.url, '../lytix/contrib/gitian-descriptors/gitian-osx.yml'])
-        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-osx-unsigned', '--destination', '../gitian.sigs/', '../lytix/contrib/gitian-descriptors/gitian-osx.yml'])
-        subprocess.check_call('mv build/out/lytix-*-osx-unsigned.tar.gz inputs/', shell=True)
-        subprocess.check_call('mv build/out/lytix-*.tar.gz build/out/lytix-*.dmg ../lytix-binaries/'+args.version, shell=True)
+        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'lockchain='+args.commit, '--url', 'lockchain='+args.url, '../lockchain/contrib/gitian-descriptors/gitian-osx.yml'])
+        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-osx-unsigned', '--destination', '../gitian.sigs/', '../lockchain/contrib/gitian-descriptors/gitian-osx.yml'])
+        subprocess.check_call('mv build/out/lockchain-*-osx-unsigned.tar.gz inputs/', shell=True)
+        subprocess.check_call('mv build/out/lockchain-*.tar.gz build/out/lockchain-*.dmg ../lockchain-binaries/'+args.version, shell=True)
 
     os.chdir(workdir)
 
@@ -101,18 +101,18 @@ def sign():
 
     if args.windows:
         print('\nSigning ' + args.version + ' Windows')
-        subprocess.check_call('cp inputs/lytix-' + args.version + '-win-unsigned.tar.gz inputs/lytix-win-unsigned.tar.gz', shell=True)
-        subprocess.check_call(['bin/gbuild', '-i', '--commit', 'signature='+args.commit, '../lytix/contrib/gitian-descriptors/gitian-win-signer.yml'])
-        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-win-signed', '--destination', '../gitian.sigs/', '../lytix/contrib/gitian-descriptors/gitian-win-signer.yml'])
-        subprocess.check_call('mv build/out/lytix-*win64-setup.exe ../lytix-binaries/'+args.version, shell=True)
-        subprocess.check_call('mv build/out/lytix-*win32-setup.exe ../lytix-binaries/'+args.version, shell=True)
+        subprocess.check_call('cp inputs/lockchain-' + args.version + '-win-unsigned.tar.gz inputs/lockchain-win-unsigned.tar.gz', shell=True)
+        subprocess.check_call(['bin/gbuild', '-i', '--commit', 'signature='+args.commit, '../lockchain/contrib/gitian-descriptors/gitian-win-signer.yml'])
+        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-win-signed', '--destination', '../gitian.sigs/', '../lockchain/contrib/gitian-descriptors/gitian-win-signer.yml'])
+        subprocess.check_call('mv build/out/lockchain-*win64-setup.exe ../lockchain-binaries/'+args.version, shell=True)
+        subprocess.check_call('mv build/out/lockchain-*win32-setup.exe ../lockchain-binaries/'+args.version, shell=True)
 
     if args.macos:
         print('\nSigning ' + args.version + ' MacOS')
-        subprocess.check_call('cp inputs/lytix-' + args.version + '-osx-unsigned.tar.gz inputs/lytix-osx-unsigned.tar.gz', shell=True)
-        subprocess.check_call(['bin/gbuild', '-i', '--commit', 'signature='+args.commit, '../lytix/contrib/gitian-descriptors/gitian-osx-signer.yml'])
-        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-osx-signed', '--destination', '../gitian.sigs/', '../lytix/contrib/gitian-descriptors/gitian-osx-signer.yml'])
-        subprocess.check_call('mv build/out/lytix-osx-signed.dmg ../lytix-binaries/'+args.version+'/lytix-'+args.version+'-osx.dmg', shell=True)
+        subprocess.check_call('cp inputs/lockchain-' + args.version + '-osx-unsigned.tar.gz inputs/lockchain-osx-unsigned.tar.gz', shell=True)
+        subprocess.check_call(['bin/gbuild', '-i', '--commit', 'signature='+args.commit, '../lockchain/contrib/gitian-descriptors/gitian-osx-signer.yml'])
+        subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-osx-signed', '--destination', '../gitian.sigs/', '../lockchain/contrib/gitian-descriptors/gitian-osx-signer.yml'])
+        subprocess.check_call('mv build/out/lockchain-osx-signed.dmg ../lockchain-binaries/'+args.version+'/lockchain-'+args.version+'-osx.dmg', shell=True)
 
     os.chdir(workdir)
 
@@ -129,17 +129,17 @@ def verify():
     os.chdir('gitian-builder')
 
     print('\nVerifying v'+args.version+' Linux\n')
-    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-linux', '../lytix/contrib/gitian-descriptors/gitian-linux.yml'])
+    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-linux', '../lockchain/contrib/gitian-descriptors/gitian-linux.yml'])
     print('\nVerifying v'+args.version+' Test Linux\n')
-    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-testlinux', '../lytix/contrib/gitian-descriptors/gitian-testlinux.yml'])
+    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-testlinux', '../lockchain/contrib/gitian-descriptors/gitian-testlinux.yml'])
     print('\nVerifying v'+args.version+' Windows\n')
-    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-unsigned', '../lytix/contrib/gitian-descriptors/gitian-win.yml'])
+    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-unsigned', '../lockchain/contrib/gitian-descriptors/gitian-win.yml'])
     print('\nVerifying v'+args.version+' MacOS\n')
-    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-osx-unsigned', '../lytix/contrib/gitian-descriptors/gitian-osx.yml'])
+    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-osx-unsigned', '../lockchain/contrib/gitian-descriptors/gitian-osx.yml'])
     print('\nVerifying v'+args.version+' Signed Windows\n')
-    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-signed', '../lytix/contrib/gitian-descriptors/gitian-win-signer.yml'])
+    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-signed', '../lockchain/contrib/gitian-descriptors/gitian-win-signer.yml'])
     print('\nVerifying v'+args.version+' Signed MacOS\n')
-    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-osx-signed', '../lytix/contrib/gitian-descriptors/gitian-osx-signer.yml'])
+    subprocess.check_call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-osx-signed', '../lockchain/contrib/gitian-descriptors/gitian-osx-signer.yml'])
 
     os.chdir(workdir)
 
@@ -149,7 +149,7 @@ def main():
     parser = argparse.ArgumentParser(usage='%(prog)s [options] signer version')
     parser.add_argument('-c', '--commit', action='store_true', dest='commit', help='Indicate that the version argument is for a commit or branch')
     parser.add_argument('-p', '--pull', action='store_true', dest='pull', help='Indicate that the version argument is the number of a github repository pull request')
-    parser.add_argument('-u', '--url', dest='url', default='https://github.com/lytixchain/lytix', help='Specify the URL of the repository. Default is %(default)s')
+    parser.add_argument('-u', '--url', dest='url', default='https://github.com/lockchainchain/lockchain', help='Specify the URL of the repository. Default is %(default)s')
     parser.add_argument('-v', '--verify', action='store_true', dest='verify', help='Verify the Gitian build')
     parser.add_argument('-b', '--build', action='store_true', dest='build', help='Do a Gitian build')
     parser.add_argument('-s', '--sign', action='store_true', dest='sign', help='Make signed binaries for Windows and MacOS')
@@ -218,10 +218,10 @@ def main():
     if args.setup:
         setup()
 
-    os.chdir('lytix')
+    os.chdir('lockchain')
     if args.pull:
         subprocess.check_call(['git', 'fetch', args.url, 'refs/pull/'+args.version+'/merge'])
-        os.chdir('../gitian-builder/inputs/lytix')
+        os.chdir('../gitian-builder/inputs/lockchain')
         subprocess.check_call(['git', 'fetch', args.url, 'refs/pull/'+args.version+'/merge'])
         args.commit = subprocess.check_output(['git', 'show', '-s', '--format=%H', 'FETCH_HEAD'], universal_newlines=True, encoding='utf8').strip()
         args.version = 'pull-' + args.version
