@@ -1934,30 +1934,18 @@ int64_t GetBlockValue(int nHeight)
     // Added 100 LCKC reward after mishap with PoS transition logic
     // Changed reward payout to 15 at block 275,000
     int64_t CoinAmount = 0;
-    int64_t DropTime = 350000;
-    //int64_t LAST_POW_BLOCK = 100000;
-    if (nHeight == 1) {
-        CoinAmount = static_cast<int64_t>(643000 * COIN);
-    } else if ( nHeight > 1 && nHeight <= 50) {
-        CoinAmount = static_cast<int64_t>(1 * COIN);
-    } else if ( nHeight > 50 && nHeight <= Params().LAST_POW_BLOCK()) {
-        CoinAmount = static_cast<int64_t>(30 * COIN);
-    } else if (nHeight > Params().LAST_POW_BLOCK() && nHeight <= 110000) {
-        CoinAmount = static_cast<int64_t>(100 * COIN);
-    } else if (nHeight > 110000 && nHeight <= 300000) {
-        CoinAmount = static_cast<int64_t>(30 * COIN);
-    } else if (nHeight > 300000 && nHeight <= (1 * DropTime)) {
-        CoinAmount = static_cast<int64_t>(15 * COIN);
-    } else if (nHeight > (1 * DropTime) && nHeight <= (2 * DropTime)) {
+    //int64_t DropTime = 350000;
+    //int64_t LAST_POW_BLOCK = 10000;
+    if nHeight <= 500000 {
         CoinAmount = static_cast<int64_t>(10 * COIN);
-    } else if (nHeight > (2 * DropTime) && nHeight <= (3 * DropTime)) {
-        CoinAmount = static_cast<int64_t>(7 * COIN);
-    } else if (nHeight > (3 * DropTime) && nHeight <= (4 * DropTime)) {
-        CoinAmount = static_cast<int64_t>(5 * COIN);
-    } else if (nHeight > (4 * DropTime) && nHeight <= (5 * DropTime)) {
-        CoinAmount = static_cast<int64_t>(3 * COIN);
-    } else if (nHeight > (5 * DropTime) && nHeight <= (6 * DropTime)) {
-        CoinAmount = static_cast<int64_t>(1 * COIN);
+    } else if (nHeight > 500000 && nHeight <= 1000000) {
+        CoinAmount = static_cast<int64_t>(8 * COIN);
+    } else if (nHeight > 1000000 && nHeight <= 2000000) {
+        CoinAmount = static_cast<int64_t>(6 * COIN);
+    } else if (nHeight > 2000000 && nHeight <= 3000000) {
+        CoinAmount = static_cast<int64_t>(4 * COIN);
+    } else if (nHeight > 3000000 && nHeight <= 4000000) {
+        CoinAmount = static_cast<int64_t>(2 * COIN);
     } else {
         CoinAmount = static_cast<int64_t>(1 * COIN);
     }
