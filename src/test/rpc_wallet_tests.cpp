@@ -31,9 +31,9 @@ BOOST_AUTO_TEST_CASE(rpc_addmultisig)
     rpcfn_type addmultisig = tableRPC["addmultisigaddress"]->actor;
 
     // old, 65-byte-long:
-    const char address1Hex[] = "041431A18C7039660CD9E3612A2A47DC53B69CB38EA4AD743B7DF8245FD0438F8E7270415F1085B9DC4D7DA367C69F1245E27EE5552A481D6854184C80F0BB8456";
+    const char address1Hex[] = "0439f050fb565b0237fcff63846482e4c14c37ce12db15a1c6b108fae305a6cb6d2151ae919f3939a222dc9240184c45b7fda3ef6ae197e090b4fb41eb1a89676a";
     // new, compressed:
-    const char address2Hex[] = "029BBEFF390CE736BD396AF43B52A1C14ED52C086B1E5585C15931F68725772BAC";
+    const char address2Hex[] = "0239f050fb565b0237fcff63846482e4c14c37ce12db15a1c6b108fae305a6cb6d";
 
     UniValue v;
     CBitcoinAddress address;
@@ -158,15 +158,15 @@ BOOST_AUTO_TEST_CASE(rpc_wallet)
     BOOST_CHECK_NO_THROW(retValue = CallRPC("signmessage " + demoAddress.ToString() + " mymessage"));
     BOOST_CHECK_THROW(CallRPC("signmessage"), runtime_error);
     /* Should throw error because this address is not loaded in the wallet */
-    BOOST_CHECK_THROW(CallRPC("signmessage 92d6rRJfgYarYcBUueaVa4a76B2BHA1Hbj mymessage"), runtime_error);
+    BOOST_CHECK_THROW(CallRPC("signmessage AsG9tbgWLLXWHKrPA3fQDT9UdRgcX6V2Yz mymessage"), runtime_error);
 
     /* missing arguments */
     BOOST_CHECK_THROW(CallRPC("verifymessage " + demoAddress.ToString()), runtime_error);
     BOOST_CHECK_THROW(CallRPC("verifymessage " + demoAddress.ToString() + " " + retValue.get_str()), runtime_error);
     /* Illegal address */
-    BOOST_CHECK_THROW(CallRPC("verifymessage 92d6rRJfgYarYcBUueaVa4a76B2BHA1Hb " + retValue.get_str() + " mymessage"), runtime_error);
+    BOOST_CHECK_THROW(CallRPC("verifymessage TsG9tbgWLLXwHKfPA3fQDT9UdRgcX6V2Yz " + retValue.get_str() + " mymessage"), runtime_error);
     /* wrong address */
-    BOOST_CHECK(CallRPC("verifymessage 92d6rRJfgYarYcBUueaVa4a76B2BHA1Hbj " + retValue.get_str() + " mymessage").get_bool() == false);
+    BOOST_CHECK(CallRPC("verifymessage AsG9tbgWLLXWHKrPA3fQDT9UdRgcX6V2Yz " + retValue.get_str() + " mymessage").get_bool() == false);
     /* Correct address and signature but wrong message */
     BOOST_CHECK(CallRPC("verifymessage " + demoAddress.ToString() + " " + retValue.get_str() + " wrongmessage").get_bool() == false);
     /* Correct address, message and signature*/

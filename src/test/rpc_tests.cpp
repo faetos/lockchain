@@ -102,10 +102,10 @@ BOOST_AUTO_TEST_CASE(rpc_rawsign)
       "\"redeemScript\":\"5121021431a18c7039660cd9e3612a2a47dc53b69cb38ea4ad743b7df8245fd0438f8e21029bbeff390ce736bd396af43b52a1c14ed52c086b1e5585c15931f68725772bac52ae\"}]";
     r = CallRPC(string("createrawtransaction ")+prevout+" "+
       //"{\"6ckcNMWRYgTnPcrTXCdwhDnMLwj3zwseej\":1}");
-      "{\"8kchRGUXn6MfP7WiUyij8uXZA8zhVW3p4p\":1}");
+      "{\"AsG9tbgWLLXWHKrPA3fQDT9UdRgcX6V2Yz\":1}");
     string notsigned = r.get_str();
-    string privkey1 = "\"a5BwiKoYqAhAjqaB8KDgtUEeBLieCW5LYVenmXERXosnVkyQUF\"";
-    string privkey2 = "\"aGi9xjZd7ysJaPJtya8uA7HhLpVJZX4e4qS49TcoLPchNeTQ3S\"";
+    string privkey1 = "\"PdyBPnnZwSN5EhEDjZK1HnR4FxPf4uh8aDLxwSk4z2vLpedLBy\"";
+    string privkey2 = "\"Npd8RSoZ746J5xyoUDiWf2aBmUXFgqa6mK7gyBAHoHDZ6ietLB\"";
     r = CallRPC(string("signrawtransaction ")+notsigned+" "+prevout+" "+"[]");
     BOOST_CHECK(find_value(r.get_obj(), "complete").get_bool() == false);
     r = CallRPC(string("signrawtransaction ")+notsigned+" "+prevout+" "+"["+privkey1+","+privkey2+"]");
