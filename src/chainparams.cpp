@@ -61,7 +61,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000fc321a8a054c3f1c4322143349e1cf43ef05a406d9142a2561db59c6f2b"));
+    (0, uint256("0x000004c8262629f0d0c60f7114e175e7474fb68f40f66880a6ec9d550104c4b8"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1571112789, // * UNIX timestamp of last checkpoint block
@@ -72,7 +72,7 @@ static const Checkpoints::CCheckpointData data = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
-    (0, uint256("0x000002babd154701852ed9b2a3d58026a2b14bfb28a14a7850841dbcefdbdcd8"));
+    (0, uint256("0x00000d3e9229432233574968b793852dbb221d574dca794d41ae77cb25b9f33e"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1571112789,
@@ -81,7 +81,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of
-    (0, uint256("0x313d9d2a75f4a62cfe5aebacd194bf2ac200d9610f1ce3aa37171e4c709ba5f7"));
+    (0, uint256("0x0242f70c3f50c8a4480fa677557e6ff77ae117e0861074b7de30938f56bf8787"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1571112789,
@@ -199,7 +199,7 @@ public:
 
         genesis = CreateGenesisBlock(
                     1571112789,                          // nTime
-                    1769131,                               // nNonce
+                    363936,                               // nNonce
                     0x1e0ffff0,                          // nBits
                     3,                                   // nVersion
                    treasuryDeposit,                      // genesisReward (treasury deposit)
@@ -237,8 +237,8 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x00000fc321a8a054c3f1c4322143349e1cf43ef05a406d9142a2561db59c6f2b"));
-            assert(genesis.hashMerkleRoot == uint256("0x5613dae2a1c7c4b1be216ed6887a4d8a029a5e080ab30402293e9fb2843e957d"));
+            assert(hashGenesisBlock == uint256("0x000004c8262629f0d0c60f7114e175e7474fb68f40f66880a6ec9d550104c4b8"));
+            assert(genesis.hashMerkleRoot == uint256("0xa1a118d5f1eec3f638b7d6be8117577a7ce25c5963f48329dca2b07f113df399"));
         }
 
 
@@ -247,7 +247,7 @@ public:
         vSeeds.push_back(CDNSSeedData("dns2", "dns2.lockchain.org"));
 
 
-        // LockChain addresses start with '8 or 9'
+        // LockChain addresses start with 'A or B'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,24);
         // LockChain script addresses start with '3'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,15);
@@ -348,7 +348,7 @@ public:
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis = CreateGenesisBlock(
                     1571112789,                          // nTime
-                    235996,                              // nNonce
+                    202664,                              // nNonce
                     0x1e0ffff0,                          // nBits
                     3,                                   // nVersion
                     treasuryDeposit,                     // genesisReward (treasury deposit)
@@ -384,8 +384,8 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x000002babd154701852ed9b2a3d58026a2b14bfb28a14a7850841dbcefdbdcd8"));
-            assert(genesis.hashMerkleRoot == uint256("0x276e1a1ac9977256e45f032c3ded1ca2bfe2390168f6893c352d1ef0d3dcab03"));
+            assert(hashGenesisBlock == uint256("0x00000d3e9229432233574968b793852dbb221d574dca794d41ae77cb25b9f33e"));
+            assert(genesis.hashMerkleRoot == uint256("0xfffbb3a73a8daa0023d9a7ecb9e556b6dd25a02bd64d7eb60e13cc496ca6e46a"));
         }
 
         vFixedSeeds.clear();
@@ -393,7 +393,7 @@ public:
 
         vSeeds.push_back(CDNSSeedData("testnet", "testnet.lockchain.org"));
 
-        // Testnet LockChain addresses start with 'X'
+        // Testnet LockChain addresses start with '8 or 9'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,21);
         // Testnet LockChain script addresses start with 'Y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,47);
@@ -494,8 +494,8 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x313d9d2a75f4a62cfe5aebacd194bf2ac200d9610f1ce3aa37171e4c709ba5f7"));
-            assert(genesis.hashMerkleRoot == uint256("0x5613dae2a1c7c4b1be216ed6887a4d8a029a5e080ab30402293e9fb2843e957d"));
+            assert(hashGenesisBlock == uint256("0x0242f70c3f50c8a4480fa677557e6ff77ae117e0861074b7de30938f56bf8787"));
+            assert(genesis.hashMerkleRoot == uint256("0xa1a118d5f1eec3f638b7d6be8117577a7ce25c5963f48329dca2b07f113df399"));
         }
 
 
