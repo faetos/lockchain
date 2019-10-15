@@ -125,19 +125,19 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
     {
 	//Dev - Governance start
         txNew.vout[0].nValue = 300000000000000;
-        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("8p2Kso1HYUUzbKzPjk6cqsuLt65y94ydgF"))) << OP_EQUALVERIFY << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("Aif6FLFrBbNuaQokdKBrYEkkJvqdJKnvKw"))) << OP_EQUALVERIFY << OP_CHECKSIG;
 	genesis.vtx.push_back(txNew);
 	txNew.vout[0].nValue = 13371711343;
-        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("8pjhs4DBNYLtsJ5ApGnkePnaFWWAX6MyaA"))) << OP_EQUALVERIFY << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("Appgk3YTWPMjr45tBrVDV4HJnnMabFkqbg"))) << OP_EQUALVERIFY << OP_CHECKSIG;
 genesis.vtx.push_back(txNew);
         txNew.vout[0].nValue = 13371173343;
-        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("8tjcjzkrtdaxmn43Z7WnBu47iqbmZJ87Nh"))) << OP_EQUALVERIFY << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("An5S7QLnvhRCxpqgFLbFGDBqsoPG8QpxhS"))) << OP_EQUALVERIFY << OP_CHECKSIG;
 genesis.vtx.push_back(txNew);
         txNew.vout[0].nValue = 13311173343;
-        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("8wJ51eDEtq1VgHBmg384upGJxzE2Rjco8i"))) << OP_EQUALVERIFY << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("AgdFWjMUY9DqfCAU6xVhKpNGPTn4cCpziF"))) << OP_EQUALVERIFY << OP_CHECKSIG;
 genesis.vtx.push_back(txNew);
         txNew.vout[0].nValue = 1337713343;
-        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("8xag7xZ3LPeTrTSiCvH3oCeiV6v7iy8aUa"))) << OP_EQUALVERIFY << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(DecodeBase58ToHex(std::string("AghDYqwZRer9jjzkTRfD9Wo54X5KFAq2iw"))) << OP_EQUALVERIFY << OP_CHECKSIG;
 
     }
     genesis.hashPrevBlock = 0;
@@ -184,7 +184,7 @@ public:
         nMasternodeCountDrift = 20;
         nMaxnodeCountDrift = 20;
         nMaxMoneyOut = 100000000 * COIN;
-	strDevFeeAddress = "8s8jUWMPFFwGSsGE9JX1z95sCbYhiyPUeg";
+	strDevFeeAddress = "B152VEL3yYYYVYCU1bGeYZGy2rzGoD3R2N";
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 10000; //  1 per minute  - 14 days @ 1440 per day
@@ -203,9 +203,9 @@ public:
                     0x1e0ffff0,                          // nBits
                     3,                                   // nVersion
                    treasuryDeposit,                      // genesisReward (treasury deposit)
-                   "8eqCEt9zBB8VvLansnFWSeo1bD4dUeeJQm",  // first NEW treasury address
-                   "8ye6Kprb2GuTjQWLuKFxPdxAZcUx1re3Kf",  // second NEW treasury address
-                   "8miQ2oYixNeESmPy7M2AXZKnt5hrzLdsbc"  // third NEW treasury address
+                   "Ax8Pt6sWhxWBu1QNosPF4yTdcwJ3cokhoQ",  // first NEW treasury address
+                   "As2c9DRPWw9EGAUxwc4MwMVXLdG7Xm229R",  // second NEW treasury address
+                   "Apder1g1x652aD2BNdwWLJon5oiqgJa51S"  // third NEW treasury address
                     );
 
         hashGenesisBlock = genesis.GetHash();
@@ -272,7 +272,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-	strSporkKey = "04F3226951791F52C149C34813316E03CCCDB99FA6FBBB51CB71E3184533A532A66C41FB9E17FF34FDCE8A33742F466A71F16861A7750C950573E2446356566D92";
+	strSporkKey = "04911da40e2219cf29e552137dfbbfb495eecb6433466706f06e4d2e701c39fc1a0145acaed9a6898a84417376bfe47370ed8cd227873ffc94b9326d7c6dab3ef5";
         strSporkKeyOld = "0499A7AF4806FC6DE640D23BC5936C29B77ADF2174B4F45492727F897AE63CF8D27B2F05040606E0D14B547916379FA10716E344E745F880EDC037307186AA25B7";
         strObfuscationPoolDummyAddress = "S87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
         nStartMasternodePayments = 1527634800; // 2018-05-30 00:00:00
@@ -352,9 +352,9 @@ public:
                     0x1e0ffff0,                          // nBits
                     3,                                   // nVersion
                     treasuryDeposit,                     // genesisReward (treasury deposit)
-                   "msYBKKuARmcmMHmzMGxc8j8XYi8bqEeBJr", // first treasury address
-                   "mfYcNVRnTNHDw6BwKPhk3Z8xXp4F8CEMtZ", // second treasury address
-                   "mkGv2mrvZvKriZ1tzwQheHQzYyW5o9ir5J"  // third treasury address
+                   "9gF1KrZcLBCTcVp1nngLqpCJkmBkmXsVrM", // first treasury address
+                   "9caSpqdLccFh7nDvU65ag9NNfxnzbpGGbJ", // second treasury address
+                   "9a6vDgS8pvjbkPP239CAorFHp4d4kxqwKf"  // third treasury address
                     );
 
         hashGenesisBlock = genesis.GetHash();
@@ -391,7 +391,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("testnet", "testnet.lockchainchain.org"));
+        vSeeds.push_back(CDNSSeedData("testnet", "testnet.lockchain.org"));
 
         // Testnet LockChain addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,21);
@@ -417,7 +417,7 @@ public:
         fSkipProofOfWorkCheck = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "04270B33151E56FA36F750D4DF70FA3926EED07B2BE9BDBA36371024828A6CBC5211939514ED9F35E0B99B89BEB92987926F4067942F6BFA7E1B8D5363E5CE9E74";
+        strSporkKey = "04bd672d8f3a72dcdbd115f8e3784f91c4ab558aafd7a26b44d1a487851d6f58fd423d4d13b5c08e01c5b11244dedbdaafea3ff40f328d6eac80ae1a6b287561b3";
         strSporkKeyOld = "";
         strObfuscationPoolDummyAddress = "m57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
         nStartMasternodePayments = 1527634800; //30th May 2018 00:00:00
@@ -462,9 +462,9 @@ public:
                     0x207fffff,                          // nBits
                     3,                                   // nVersion
                     treasuryDeposit,                     // genesisReward (treasury deposit)
-                   "8eqCEt9zBB8VvLansnFWSeo1bD4dUeeJQm",  // first NEW treasury address
-                   "8ye6Kprb2GuTjQWLuKFxPdxAZcUx1re3Kf",  // second NEW treasury address
-                   "8miQ2oYixNeESmPy7M2AXZKnt5hrzLdsbc"  // third NEW treasury address
+                   "Ax8Pt6sWhxWBu1QNosPF4yTdcwJ3cokhoQ",  // first NEW treasury address
+                   "As2c9DRPWw9EGAUxwc4MwMVXLdG7Xm229R",  // second NEW treasury address
+                   "Apder1g1x652aD2BNdwWLJon5oiqgJa51S"  // third NEW treasury address
                     );
 
         hashGenesisBlock = genesis.GetHash();

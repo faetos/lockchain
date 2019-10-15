@@ -17,7 +17,7 @@ class MempoolLimitTest(BitcoinTestFramework):
         txouts = gen_return_txouts()
         relayfee = self.nodes[0].getnetworkinfo()['relayfee']
 
-        self.log.info('Check that mempoolminfee is minrelytxfee')
+        self.log.info('Check that mempoolminfee is minrelckcfee')
         assert_equal(self.nodes[0].getmempoolinfo()['minrelaytxfee'], Decimal('0.00001000'))
         assert_equal(self.nodes[0].getmempoolinfo()['mempoolminfee'], Decimal('0.00001000'))
 
@@ -46,7 +46,7 @@ class MempoolLimitTest(BitcoinTestFramework):
         txdata = self.nodes[0].gettransaction(txid)
         assert(txdata['confirmations'] ==  0) #confirmation should still be 0
 
-        self.log.info('Check that mempoolminfee is larger than minrelytxfee')
+        self.log.info('Check that mempoolminfee is larger than minrelckcfee')
         assert_equal(self.nodes[0].getmempoolinfo()['minrelaytxfee'], Decimal('0.00001000'))
         assert_greater_than(self.nodes[0].getmempoolinfo()['mempoolminfee'], Decimal('0.00001000'))
 

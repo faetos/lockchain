@@ -57,22 +57,22 @@ QString BitcoinUnits::name(int unit)
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
         case BTC:
-            return QString("LYTX");
+            return QString("LCKC");
         case mBTC:
-            return QString("mLYTX");
+            return QString("mLCKC");
         case uBTC:
-            return QString::fromUtf8("μLYTX");
+            return QString::fromUtf8("μLCKC");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
         case BTC:
-            return QString("tLYTX");
+            return QString("tLCKC");
         case mBTC:
-            return QString("mtLYTX");
+            return QString("mtLCKC");
         case uBTC:
-            return QString::fromUtf8("μtLYTX");
+            return QString::fromUtf8("μtLCKC");
         default:
             return QString("???");
         }
@@ -84,22 +84,22 @@ QString BitcoinUnits::description(int unit)
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
         case BTC:
-            return QString("LYTX");
+            return QString("LCKC");
         case mBTC:
-            return QString("Milli-LYTX (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-LCKC (1 / 1" THIN_SP_UTF8 "000)");
         case uBTC:
-            return QString("Micro-LYTX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-LCKC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
         case BTC:
-            return QString("TestLYTXs");
+            return QString("TestLCKCs");
         case mBTC:
-            return QString("Milli-TestLYTX (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-TestLCKC (1 / 1" THIN_SP_UTF8 "000)");
         case uBTC:
-            return QString("Micro-TestLYTX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-TestLCKC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }

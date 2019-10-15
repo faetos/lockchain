@@ -673,13 +673,13 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 CBigNum bnSerial = spend.getCoinSerialNumber();
                 CKey key;
                 if (!pwallet->GetZerocoinKey(bnSerial, key)) {
-                    LogPrint("debug", "%s: failed to find zLYTX with serial %s, unable to sign block\n", __func__, bnSerial.GetHex());
+                    LogPrint("debug", "%s: failed to find zLCKC with serial %s, unable to sign block\n", __func__, bnSerial.GetHex());
                     continue;
                 }
 
                 //Sign block with the zPIV key
                 if (!SignBlockWithKey(*pblock, key)) {
-                    LogPrint("debug", "LockChainMiner(): Signing new block with zLYTX key failed \n");
+                    LogPrint("debug", "LockChainMiner(): Signing new block with zLCKC key failed \n");
                     continue;
                 }
             } else if (!SignBlock(*pblock, *pwallet)) {

@@ -86,10 +86,10 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Execute command when the best block changes (%s in cmd is replaced by block "
 "hash)"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Fees (in LYTX/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in LCKC/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Fees (in LYTX/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in LCKC/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -184,10 +184,10 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 LYTX."),
+"transaction that are not equal 10000 LCKC."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"LYTX."),
+"LCKC."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -309,7 +309,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Failed to listen on any port. Use -listen=0 i
 QT_TRANSLATE_NOOP("bitcoin-core", "Failed to read block index"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Failed to write block index"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Fee (in LYTX/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Fee (in LCKC/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Found enough users, signing ( waiting %s )"),

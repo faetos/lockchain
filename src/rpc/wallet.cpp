@@ -361,7 +361,7 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"address\"  (string, required) The address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in LYTX to send. eg 0.1\n"
+            "2. \"amount\"      (numeric, required) The amount in LCKC to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -409,7 +409,7 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"address\"  (string, required) The address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in LYTX to send. eg 0.1\n"
+            "2. \"amount\"      (numeric, required) The amount in LCKC to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -461,7 +461,7 @@ UniValue listaddressgroupings(const UniValue& params, bool fHelp)
             "  [\n"
             "    [\n"
             "      \"address\",     (string) The address\n"
-            "      amount,                 (numeric) The amount in LYTX\n"
+            "      amount,                 (numeric) The amount in LCKC\n"
             "      \"account\"             (string, optional) The account\n"
             "    ]\n"
             "    ,...\n"
@@ -560,7 +560,7 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount   (numeric) The total amount in LYTX received at this address.\n"
+            "amount   (numeric) The total amount in LCKC received at this address.\n"
 
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n" +
@@ -859,7 +859,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
             "\nArguments:\n"
             "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
             "2. \"topaddress\"  (string, required) The address to send funds to.\n"
-            "3. amount                (numeric, required) The amount in LYTX. (transaction fee is added on top).\n"
+            "3. amount                (numeric, required) The amount in LCKC. (transaction fee is added on top).\n"
             "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
             "                                     This is not part of the transaction, just kept in your wallet.\n"
@@ -921,7 +921,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
             "1. \"fromaccount\"         (string, required) The account to send the funds from, can be \"\" for the default account\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The address is the key, the numeric amount in LYTX is the value\n"
+            "      \"address\":amount   (numeric) The address is the key, the numeric amount in LCKC is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -1754,7 +1754,7 @@ UniValue walletpassphrase(const UniValue& params, bool fHelp)
         throw runtime_error(
             "walletpassphrase \"passphrase\" timeout ( anonymizeonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
-            "This is needed prior to performing transactions related to private keys such as sending LYTX\n"
+            "This is needed prior to performing transactions related to private keys such as sending LCKC\n"
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
             "2. timeout            (numeric, required) The time to keep the decryption key in seconds.\n"
@@ -1910,7 +1910,7 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
             "\nExamples:\n"
             "\nEncrypt you wallet\n" +
             HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending LYTX\n" +
+            "\nNow set the passphrase to use the wallet, such as for signing or sending LCKC\n" +
             HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can so something like sign\n" +
             HelpExampleCli("signmessage", "\"address\" \"test message\"") +
@@ -1954,7 +1954,7 @@ UniValue lockunspent(const UniValue& params, bool fHelp)
             "lockunspent unlock [{\"txid\":\"txid\",\"vout\":n},...]\n"
             "\nUpdates list of temporarily unspendable outputs.\n"
             "Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.\n"
-            "A locked transaction output will not be chosen by automatic coin selection, when spending LYTXs.\n"
+            "A locked transaction output will not be chosen by automatic coin selection, when spending LCKCs.\n"
             "Locks are stored in memory only. Nodes start with zero locked outputs, and the locked output list\n"
             "is always cleared (by virtue of process exit) when a node stops or fails.\n"
             "Also see the listunspent call\n"
@@ -2083,7 +2083,7 @@ UniValue settxfee(const UniValue& params, bool fHelp)
             "\nSet the transaction fee per kB.\n"
 
             "\nArguments:\n"
-            "1. amount         (numeric, required) The transaction fee in LYTX/kB rounded to the nearest 0.00000001\n"
+            "1. amount         (numeric, required) The transaction fee in LCKC/kB rounded to the nearest 0.00000001\n"
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
             "\nExamples:\n" +
@@ -2110,7 +2110,7 @@ UniValue getwalletinfo(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total LYTX balance of the wallet\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total LCKC balance of the wallet\n"
             "  \"txcount\": xxxxxxx,         (numeric) the total number of transactions in the wallet\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
@@ -2479,7 +2479,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
     string strAddress = params[0].get_str();
     CBitcoinAddress address(strAddress);
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid LYTX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid LCKC address");
     if (boost::lexical_cast<int>(params[1].get_str()) < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
     if (pwalletMain->IsLocked())
@@ -2524,11 +2524,11 @@ UniValue getzerocoinbalance(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "getzerocoinbalance\n"
-            "\nReturn the wallet's total zLYTX balance.\n" +
+            "\nReturn the wallet's total zLCKC balance.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
-            "amount         (numeric) Total zLYTX balance.\n"
+            "amount         (numeric) Total zLCKC balance.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getzerocoinbalance", "") + HelpExampleRpc("getzerocoinbalance", ""));
@@ -2552,7 +2552,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "listmintedzerocoins\n"
-            "\nList all zLYTX mints in the wallet.\n" +
+            "\nList all zLCKC mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -2628,7 +2628,7 @@ UniValue listspentzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "listspentzerocoins\n"
-            "\nList all the spent zLYTX mints in the wallet.\n" +
+            "\nList all the spent zLCKC mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -2660,11 +2660,11 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
             "mintzerocoin amount ( utxos )\n"
-            "\nMint the specified zLYTX amount\n" +
+            "\nMint the specified zLCKC amount\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of LockChain to convert to zLYTX\n"
+            "1. amount      (numeric, required) Enter an amount of LockChain to convert to zLCKC\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"
@@ -2708,7 +2708,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
     int64_t nTime = GetTimeMillis();
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zLYTX is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zLCKC is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked(true);
 
@@ -2771,7 +2771,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 5 || params.size() < 4)
         throw runtime_error(
             "spendzerocoin amount mintchange minimizechange securitylevel ( \"address\" )\n"
-            "\nSpend zLYTX to a LockChain address.\n" +
+            "\nSpend zLCKC to a LockChain address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -2802,7 +2802,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in LYTX.\n"
+            "      \"value\": amount,         (numeric) Value in LCKC.\n"
             "      \"address\": \"xxx\"         (string) address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
@@ -2816,13 +2816,13 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zLYTX is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zLCKC is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked();
 
     int64_t nTimeStart = GetTimeMillis();
     CAmount nAmount = AmountFromValue(params[0]);   // Spending amount
-    bool fMintChange = params[1].get_bool();        // Mint change to zLYTX
+    bool fMintChange = params[1].get_bool();        // Mint change to zLCKC
     bool fMinimizeChange = params[2].get_bool();    // Minimize change
     int nSecurityLevel = params[3].get_int();       // Security level
 
@@ -3078,7 +3078,7 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
-            "2. \"denomination\"         (integer, optional) Export a specific denomination of zLYTX\n"
+            "2. \"denomination\"         (integer, optional) Export a specific denomination of zLCKC\n"
 
             "\nResult:\n"
             "[                   (array of json object)\n"
@@ -3090,8 +3090,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
             "    \"t\": \"txid\",    (string) The txid that the coin was minted in\n"
             "    \"h\": n,         (numeric) The height the tx was added to the blockchain\n"
             "    \"u\": used,      (boolean) Whether the mint has been spent\n"
-            "    \"v\": version,   (numeric) The version of the zLYTX\n"
-            "    \"k\": \"privkey\"  (string) The zLYTX private key (V2+ zLYTX only)\n"
+            "    \"v\": version,   (numeric) The version of the zLCKC\n"
+            "    \"k\": \"privkey\"  (string) The zLCKC private key (V2+ zLCKC only)\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -3157,7 +3157,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"added\": n,        (numeric) The quantity of zerocoin mints that were added\n"
-            "  \"value\": amount    (numeric) The total zLYTX value of zerocoin mints that were added\n"
+            "  \"value\": amount    (numeric) The total zLCKC value of zerocoin mints that were added\n"
             "}\n"
 
             "\nExamples\n" +
@@ -3237,7 +3237,7 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw runtime_error(
             "reconsiderzerocoins\n"
-            "\nCheck archived zLYTX list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zLCKC list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -3288,11 +3288,11 @@ UniValue setzseed(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 1)
         throw runtime_error(
             "setzseed \"seed\"\n"
-            "\nSet the wallet's deterministic zLYTX seed to a specific value.\n" +
+            "\nSet the wallet's deterministic zLCKC seed to a specific value.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"seed\"        (string, required) The deterministic zLYTX seed.\n"
+            "1. \"seed\"        (string, required) The deterministic zLCKC seed.\n"
 
             "\nResult\n"
             "\"success\" : b,  (boolean) Whether the seed was successfully set.\n"
@@ -3322,11 +3322,11 @@ UniValue getzseed(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw runtime_error(
             "getzseed\n"
-            "\nCheck archived zLYTX list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zLCKC list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult\n"
-            "\"seed\" : s,  (string) The deterministic zLYTX seed.\n"
+            "\"seed\" : s,  (string) The deterministic zLCKC seed.\n"
 
             "\nExamples\n" +
             HelpExampleCli("getzseed", "") + HelpExampleRpc("getzseed", ""));
@@ -3347,12 +3347,12 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 2)
         throw runtime_error(
             "generatemintlist\n"
-            "\nShow mints that are derived from the deterministic zLYTX seed.\n" +
+            "\nShow mints that are derived from the deterministic zLCKC seed.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"  : n,  (numeric) Which sequential zLYTX to start with.\n"
-            "2. \"range\"  : n,  (numeric) How many zLYTX to generate.\n"
+            "1. \"count\"  : n,  (numeric) Which sequential zLCKC to start with.\n"
+            "2. \"range\"  : n,  (numeric) How many zLCKC to generate.\n"
 
             "\nResult:\n"
             "[\n"
@@ -3395,7 +3395,7 @@ UniValue dzstate(const UniValue& params, bool fHelp) {
     if (fHelp || params.size() != 0)
         throw runtime_error(
                 "dzstate\n"
-                        "\nThe current state of the mintpool of the deterministic zLYTX wallet.\n" +
+                        "\nThe current state of the mintpool of the deterministic zLCKC wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
                         "\nExamples\n" +
@@ -3447,12 +3447,12 @@ UniValue searchdz(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 3)
         throw runtime_error(
             "searchdz\n"
-            "\nMake an extended search for deterministically generated zLYTX that have not yet been recognized by the wallet.\n" +
+            "\nMake an extended search for deterministically generated zLCKC that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"       (numeric) Which sequential zLYTX to start with.\n"
-            "2. \"range\"       (numeric) How many zLYTX to generate.\n"
+            "1. \"count\"       (numeric) Which sequential zLCKC to start with.\n"
+            "2. \"range\"       (numeric) How many zLCKC to generate.\n"
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +

@@ -172,7 +172,7 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>LockChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
+        <source>LockChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LCKCs from being stolen by malware infecting your computer.</source>
         <translation>LockChain сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши LockChain от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
@@ -180,8 +180,8 @@
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LYTX&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ LYTX&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LCKC&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ LCKC&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1504,32 +1504,32 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 LYTX</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 LYTX</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 LCKC</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 LCKC</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 LYTX</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 LYTX</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 LCKC</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 LCKC</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 LYTX to anonymize 10000 LYTX</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 LYTX для анонимизации 10000 LYTX</translation>
+        <source>This option is the quickest and will cost about ~0.025 LCKC to anonymize 10000 LCKC</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 LCKC для анонимизации 10000 LCKC</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 LYTX to anonymize 10000 LYTX</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 LYTX для анонимизации 10000 LYTX</translation>
+        <source>This option is moderately fast and will cost about 0.05 LCKC to anonymize 10000 LCKC</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 LCKC для анонимизации 10000 LCKC</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 LYTX per 10000 LYTX you anonymize.</source>
-        <translation>0.1 LYTX за 10000 LYTX которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 LCKC per 10000 LCKC you anonymize.</source>
+        <translation>0.1 LCKC за 10000 LCKC которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -2570,8 +2570,8 @@ https://www.transifex.com/lockchain-project/lockchain-project-translations</tran
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 LYTX</source>
-        <translation>0 LYTX</translation>
+        <source>0 LCKC</source>
+        <translation>0 LCKC</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>

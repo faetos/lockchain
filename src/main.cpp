@@ -1051,13 +1051,13 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const Coi
     //Check to see if the zPIV is properly signed
     if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
         if (!spend.HasValidSignature())
-            return error("%s: V2 zLYTX spend does not have a valid signature", __func__);
+            return error("%s: V2 zLCKC spend does not have a valid signature", __func__);
 
         libzerocoin::SpendType expectedType = libzerocoin::SpendType::SPEND;
         if (tx.IsCoinStake())
             expectedType = libzerocoin::SpendType::STAKE;
         if (spend.getSpendType() != expectedType) {
-            return error("%s: trying to spend zLYTX without the correct spend type. txid=%s", __func__,
+            return error("%s: trying to spend zLCKC without the correct spend type. txid=%s", __func__,
                          tx.GetHash().GetHex());
         }
     }
@@ -1067,7 +1067,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const Coi
     bool fUseV1Params = spend.getVersion() < libzerocoin::PrivateCoin::PUBKEY_VERSION;
     if (pindex->nHeight > Params().Zerocoin_Block_EnforceSerialRange() &&
         !spend.HasValidSerial(Params().Zerocoin_Params(fUseV1Params)))
-        return error("%s : zLYTX spend with serial %s from tx %s is not in valid range\n", __func__,
+        return error("%s : zLCKC spend with serial %s from tx %s is not in valid range\n", __func__,
                      spend.getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
     */
 
@@ -1377,7 +1377,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             //Check that txid is not already in the chain
             int nHeightTx = 0;
             if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("AcceptToMemoryPool : zLYTX spend tx %s already in block %d",
+                return state.Invalid(error("AcceptToMemoryPool : zLCKC spend tx %s already in block %d",
                                            tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
             //Check for double spending of serial #'s
@@ -1911,7 +1911,7 @@ int64_t GetBlockValue(int nHeight)
     // Block value is reduced every 5000 blocks
     // Prev AirDrop 11/2018 + 2500 bonus 643,000
     // Reduced reward to start chain
-    // Added 100 LYTX reward after mishap with PoS transition logic
+    // Added 100 LCKC reward after mishap with PoS transition logic
     int64_t CoinAmount = 0;
     int64_t DropTime = 150;
     //Pulls from chainparams.cpp LAST_POW_BLOCK here for reference
@@ -1931,7 +1931,7 @@ int64_t GetBlockValue(int nHeight)
     // Block value is reduced every 500,000 blocks
     // Prev AirDrop 11/2018 + 2500 bonus 643,000
     // Reduced reward to start chain
-    // Added 100 LYTX reward after mishap with PoS transition logic
+    // Added 100 LCKC reward after mishap with PoS transition logic
     // Changed reward payout to 15 at block 275,000
     int64_t CoinAmount = 0;
     int64_t DropTime = 350000;
@@ -2956,7 +2956,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //Track zPIV money supply in the block index
     if (!UpdateZPIVSupply(block, pindex))
-        return state.DoS(100, error("%s: Failed to calculate new zLYTX supply for block=%s height=%d", __func__,
+        return state.DoS(100, error("%s: Failed to calculate new zLCKC supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
     // track money supply and mint amount info
@@ -3162,7 +3162,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
     chainActive.SetTip(pindexNew);
 
 #ifdef ENABLE_WALLET
-    // If turned on AutoZeromint will automatically convert LYTX to zLYTX
+    // If turned on AutoZeromint will automatically convert LCKC to zLCKC
     if (pwalletMain && pwalletMain->isZeromintEnabled())
         pwalletMain->AutoZeromint();
 #endif // ENABLE_WALLET
@@ -4042,7 +4042,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 if (txIn.scriptSig.IsZerocoinSpend()) {
                     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txIn);
                     if (count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zLYTX serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of zLCKC serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }
@@ -4249,15 +4249,15 @@ bool AcceptBlockHeader(const CBlock& block, CValidationState& state, CBlockIndex
 bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
 {
     if (nHeight < Params().Zerocoin_Block_V2_Start())
-        return error("%s: zLYTX stake block is less than allowed start height", __func__);
+        return error("%s: zLCKC stake block is less than allowed start height", __func__);
 
     if (CZPivStake* zPIV = dynamic_cast<CZPivStake*>(stake)) {
         CBlockIndex* pindexFrom = zPIV->GetIndexFrom();
         if (!pindexFrom)
-            return error("%s: failed to get index associated with zLYTX stake checksum", __func__);
+            return error("%s: failed to get index associated with zLCKC stake checksum", __func__);
 
         if (chainActive.Height() - pindexFrom->nHeight < Params().Zerocoin_RequiredStakeDepth())
-            return error("%s: zLYTX stake does not have required confirmation depth", __func__);
+            return error("%s: zLCKC stake does not have required confirmation depth", __func__);
 
         //The checksum needs to be the exact checksum from 200 blocks ago
         uint256 nCheckpoint200 = chainActive[nHeight - Params().Zerocoin_RequiredStakeDepth()]->nAccumulatorCheckpoint;
@@ -4316,7 +4316,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             return error("%s: null stake ptr", __func__);
 
         if (stake->IsZPIV() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
-            return state.DoS(100, error("%s: staked zLYTX fails context checks", __func__));
+            return state.DoS(100, error("%s: staked zLCKC fails context checks", __func__));
 
         uint256 hash = block.GetHash();
         if(!mapProofOfStake.count(hash)) // add to mapProofOfStake
@@ -4599,7 +4599,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         }
     }
     if (nMints || nSpends)
-        LogPrintf("%s : block contains %d zLYTX mints and %d zLYTX spends\n", __func__, nMints, nSpends);
+        LogPrintf("%s : block contains %d zLCKC mints and %d zLCKC spends\n", __func__, nMints, nSpends);
 
     if (!CheckBlockSignature(*pblock))
         return error("ProcessNewBlock() : bad proof-of-stake block signature");

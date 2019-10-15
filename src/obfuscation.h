@@ -258,9 +258,9 @@ public:
 class CObfuScationSigner
 {
 public:
-    /// Is the inputs associated with this masternode public key? (and there is 5000 LYTX - checking if valid masternode)
+    /// Is the inputs associated with this masternode public key? (and there is 5000 LCKC - checking if valid masternode)
     bool IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey);
-    /// Is the inputs associated with this maxnode public key? (and there is 50000 LYTX - checking if valid maxnode)
+    /// Is the inputs associated with this maxnode public key? (and there is 50000 LCKC - checking if valid maxnode)
     bool IsMaxVinAssociatedWithPubkey(CTxIn& maxvin, CPubKey& pubkey);
 
     /// Set the private/public key values, returns true if successful

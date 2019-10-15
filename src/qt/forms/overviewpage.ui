@@ -333,7 +333,7 @@
                           <string>Your current spendable balance</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -365,7 +365,7 @@
                           <string>Total Balance, including all unavailable coins.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -433,7 +433,7 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>LYTX Balance</string>
+                          <string>LCKC Balance</string>
                          </property>
                         </widget>
                        </item>
@@ -518,7 +518,7 @@
                           <string>Your current spendable balance</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -543,7 +543,7 @@
                           <string>Your current balance in watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -575,7 +575,7 @@
                           <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -600,7 +600,7 @@
                           <string>Unconfirmed transactions to watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -632,7 +632,7 @@
                           <string>Staked, masternode or maxnode rewards that has not yet matured</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -657,7 +657,7 @@
                           <string>Staked, masternode or maxnode rewards in watch-only addresses that has not yet matured</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -670,7 +670,7 @@
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelLockedBalanceText">
                          <property name="toolTip">
-                          <string>Locked LYTX, Masternode or Maxnode collaterals.</string>
+                          <string>Locked LCKC, Masternode or Maxnode collaterals.</string>
                          </property>
                          <property name="text">
                           <string>Locked:</string>
@@ -689,10 +689,10 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Locked LYTX, Masternode or Maxnode collaterals.</string>
+                          <string>Locked LCKC, Masternode or Maxnode collaterals.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -717,7 +717,7 @@
                           <string>Current locked balance in watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -752,7 +752,7 @@
                           <string>Your current balance, unconfirmed and immature transactions included</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -777,7 +777,7 @@
                           <string>Current total balance in watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 LYTX</string>
+                          <string notr="true">0.000 000 00 LCKC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

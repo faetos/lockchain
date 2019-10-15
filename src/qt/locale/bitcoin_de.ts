@@ -176,16 +176,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>LockChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LYTXs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer LYTXs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>LockChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LCKCs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer LCKCs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LYTX&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre LYTXs verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LCKC&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre LCKCs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -618,8 +618,8 @@
         <translation>&amp;Privatsphäre</translation>
     </message>
     <message>
-        <source>Privacy Action for zLYTX and Obfuscation</source>
-        <translation>Privatsphäre Aktion für zLYTX und Verschleierung</translation>
+        <source>Privacy Action for zLCKC and Obfuscation</source>
+        <translation>Privatsphäre Aktion für zLCKC und Verschleierung</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1539,32 +1539,32 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Bitte den gewünschten Privatsphäre Level auswählen.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 LYTX</source>
-        <translation>2 separate Masternodes verwenden um bis zu 10000 LYTX zu mixen</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 LCKC</source>
+        <translation>2 separate Masternodes verwenden um bis zu 10000 LCKC zu mixen</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 LYTX</source>
-        <translation>8 separate Masternodes verwenden um bis zu 10000 LYTX zu mixen</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 LCKC</source>
+        <translation>8 separate Masternodes verwenden um bis zu 10000 LCKC zu mixen</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 separate Masternodes verwenden</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 LYTX to anonymize 10000 LYTX</source>
-        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 LYTX um 10000 LYTX zu anonymisieren </translation>
+        <source>This option is the quickest and will cost about ~0.025 LCKC to anonymize 10000 LCKC</source>
+        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 LCKC um 10000 LCKC zu anonymisieren </translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 LYTX to anonymize 10000 LYTX</source>
-        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 LYTX um 10000 LYTX zu anonymisieren</translation>
+        <source>This option is moderately fast and will cost about 0.05 LCKC to anonymize 10000 LCKC</source>
+        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 LCKC um 10000 LCKC zu anonymisieren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Diese Option ist die langsamste und sicherste Option. Die Verwendung maximaler Anonymisierung kostet</translation>
     </message>
     <message>
-        <source>0.1 LYTX per 10000 LYTX you anonymize.</source>
-        <translation>0.1 LYTX per 10000 LYTX die anonymisiert werden.</translation>
+        <source>0.1 LCKC per 10000 LCKC you anonymize.</source>
+        <translation>0.1 LCKC per 10000 LCKC die anonymisiert werden.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1707,20 +1707,20 @@ https://www.transifex.com/lockchain-project/lockchain-project-translations</tran
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Percentage of incoming LYTX which get automatically converted to zLYTX via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des einkommenden LYTX, welcher automatisch zu zLYTX via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming LCKC which get automatically converted to zLCKC via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des einkommenden LCKC, welcher automatisch zu zLCKC via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zLYTX</source>
-        <translation>Prozentsatz der automatisierten zLYTX</translation>
+        <source>Percentage of autominted zLCKC</source>
+        <translation>Prozentsatz der automatisierten zLCKC</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough LYTX for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend LYTX für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough LCKC for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend LCKC für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zLYTX Denomination</source>
-        <translation>Bevorzugte automatisierte zLYTX Stückelung </translation>
+        <source>Preferred Automint zLCKC Denomination</source>
+        <translation>Bevorzugte automatisierte zLCKC Stückelung </translation>
     </message>
     <message>
         <source>Connect to the LockChain network through a SOCKS5 proxy.</source>
@@ -1854,8 +1854,8 @@ https://www.transifex.com/lockchain-project/lockchain-project-translations</tran
         <translation>Formular</translation>
     </message>
     <message>
-        <source>LYTX Balances</source>
-        <translation>LYTX Bilanzen</translation>
+        <source>LCKC Balances</source>
+        <translation>LCKC Bilanzen</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1922,12 +1922,12 @@ https://www.transifex.com/lockchain-project/lockchain-project-translations</tran
         <translation>Kombinierte Bilanz (einschließlich unreifer Coins)</translation>
     </message>
     <message>
-        <source>LYTX:</source>
-        <translation>LYTX:</translation>
+        <source>LCKC:</source>
+        <translation>LCKC:</translation>
     </message>
     <message>
-        <source>zLYTX:</source>
-        <translation>zLYTX:</translation>
+        <source>zLCKC:</source>
+        <translation>zLCKC:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2055,12 +2055,12 @@ https://www.transifex.com/lockchain-project/lockchain-project-translations</tran
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>LYTX which were anonymized via Zerocin Protocol</source>
-        <translation>LYTX, die über das Zerocin-Protokoll anonymisiert wurden</translation>
+        <source>LCKC which were anonymized via Zerocin Protocol</source>
+        <translation>LCKC, die über das Zerocin-Protokoll anonymisiert wurden</translation>
     </message>
     <message>
-        <source>Zerocoin LYTX (zLYTX)</source>
-        <translation>Zerocoin LYTX (zLYTX)</translation>
+        <source>Zerocoin LCKC (zLCKC)</source>
+        <translation>Zerocoin LCKC (zLCKC)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2083,16 +2083,16 @@ https://www.transifex.com/lockchain-project/lockchain-project-translations</tran
         <translation>0</translation>
     </message>
     <message>
-        <source>zLYTX</source>
-        <translation>zLYTX</translation>
+        <source>zLCKC</source>
+        <translation>zLCKC</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Verfügbar für Prägung:</translation>
     </message>
     <message>
-        <source>0.000 000 00 LYTX</source>
-        <translation>0.000 000 00 LYTX</translation>
+        <source>0.000 000 00 LCKC</source>
+        <translation>0.000 000 00 LCKC</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2151,8 +2151,8 @@ https://www.transifex.com/lockchain-project/lockchain-project-translations</tran
         <translation>Verfügbare Bilanz:</translation>
     </message>
     <message>
-        <source>0 zLYTX</source>
-        <translation>0 zLYTX</translation>
+        <source>0 zLCKC</source>
+        <translation>0 zLCKC</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2387,8 +2387,8 @@ https://www.transifex.com/lockchain-project/lockchain-project-translations</tran
         <translation>Erfolgreich geprägt</translation>
     </message>
     <message>
-        <source> zLYTX in </source>
-        <translation> zLYTX in </translation>
+        <source> zLCKC in </source>
+        <translation> zLCKC in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2482,7 +2482,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zLockChain Spend #: </source>
-        <translation>zLYTX Ausgeben #:</translation>
+        <translation>zLCKC Ausgeben #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -3063,7 +3063,7 @@ Bitte haben Sie Geduld...</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>LYTXs überweisen</translation>
+        <translation>LCKCs überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3134,8 +3134,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 LYTX</source>
-        <translation>0 LYTX</translation>
+        <source>0 LCKC</source>
+        <translation>0 LCKC</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3186,12 +3186,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uLYTXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uLYTXs in fee,&lt;br /&gt;while "at least" pays 1000 uLYTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uLYTXs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uLYTXs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uLYTXs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uLCKCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uLCKCs in fee,&lt;br /&gt;while "at least" pays 1000 uLCKCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uLCKCs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uLCKCs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uLCKCs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uLYTXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uLYTXs in fee,&lt;br /&gt;while "total at least" pays 1000 uLYTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uLYTXs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uLYTXs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uLYTXs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uLCKCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uLCKCs in fee,&lt;br /&gt;while "total at least" pays 1000 uLCKCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uLCKCs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uLCKCs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uLCKCs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for LockChain transactions than the network can process.</source>
@@ -3242,8 +3242,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Empfänge&amp;r hinzufügen</translation>
     </message>
     <message>
-        <source>Anonymized LYTX</source>
-        <translation>Anonymisierte LYTX</translation>
+        <source>Anonymized LCKC</source>
+        <translation>Anonymisierte LCKC</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3817,7 +3817,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte LYTXs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine LYTXs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte LCKCs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine LCKCs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3963,23 +3963,23 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Converted Piv to zLockChain</source>
-        <translation>Umgewandeltes LYTX zu zLYTX</translation>
+        <translation>Umgewandeltes LCKC zu zLCKC</translation>
     </message>
     <message>
         <source>Spent zLockChain</source>
-        <translation>Ausgeben zLYTX</translation>
+        <translation>Ausgeben zLCKC</translation>
     </message>
     <message>
         <source>Received Piv from zLockChain</source>
-        <translation>Empfangene LYTX von zLYTX</translation>
+        <translation>Empfangene LCKC von zLCKC</translation>
     </message>
     <message>
         <source>Minted Change as zLockChain from zLockChain Spend</source>
-        <translation>Geprägtes Wechselgeld als zLYTX von zLYTX Ausgabe</translation>
+        <translation>Geprägtes Wechselgeld als zLCKC von zLCKC Ausgabe</translation>
     </message>
     <message>
         <source>Converted zLockChain to Piv</source>
-        <translation>Umgewandeltes zLYTX zu LYTX</translation>
+        <translation>Umgewandeltes zLCKC zu LCKC</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3987,7 +3987,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zLockChain Accumulator</source>
-        <translation>zLYTX Speicher</translation>
+        <translation>zLCKC Speicher</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4098,7 +4098,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Received Piv from zLockChain</source>
-        <translation>Empfangen LYTX von zLYTX</translation>
+        <translation>Empfangen LCKC von zLCKC</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4110,7 +4110,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zLockChain</source>
-        <translation>Zerocoin Ausgabe, Wechselgeld in zLYTX</translation>
+        <translation>Zerocoin Ausgabe, Wechselgeld in zLCKC</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4231,11 +4231,11 @@ Bitte haben Sie Geduld...</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>LYTXs überweisen</translation>
+        <translation>LCKCs überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 LYTX.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 LYTX begrenzt.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 LCKC.</source>
+        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 LCKC begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -4281,7 +4281,7 @@ Bitte haben Sie Geduld...</translation>
     <name>ZLockChainControlDialog</name>
     <message>
         <source>Select zLockChain to Spend</source>
-        <translation>Auswahl zLYTX als Ausgabe</translation>
+        <translation>Auswahl zLCKC als Ausgabe</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4293,7 +4293,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zLockChain</source>
-        <translation>zLYTX</translation>
+        <translation>zLCKC</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4379,12 +4379,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in LYTX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in LYTX/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
+        <source>Fees (in LCKC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in LCKC/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in LYTX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in LYTX/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in LCKC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in LCKC/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

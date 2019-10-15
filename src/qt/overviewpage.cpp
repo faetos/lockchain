@@ -283,7 +283,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setVisible(showWatchOnlyPIVLocked && showWatchOnly);
 
     // Percent split
-    // DISDISDIS - change to total available unlocked instead of zLYTX
+    // DISDISDIS - change to total available unlocked instead of zLCKC
     //bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
     //bool showPercentages = ! (nTotalBalance == 0);
     //ui->labelPIVPercent->setVisible(showPercentages);
