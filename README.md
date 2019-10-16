@@ -3,7 +3,7 @@ Lock Chain Core repository
 
 [![Build Status](https://travis-ci.org/faetos/lockchain.png)](https://travis-ci.org/faetos/lockchain) [![GitHub tag](https://img.shields.io/github/tag/faetos/lockchain.svg)](https://github.com/faetos/lockchain/tree/v1.0.0)
 
-Lock Chain is an open source crypto-currency focused on fast private transactions with low transaction fees & low confirmations.  It is currently in develpment as a proof of concept. 
+Lock Chain is an open source blockchain project focused on storing mission critical data into the blockchain.  It is currently in development. 
 
 ------------------------
 
@@ -22,11 +22,11 @@ Reward breakdown -  40% Masternodes. 30% Maxnodes, 25% Stakers, and 5% Dev fee
 - 2 until 4,000,000
 - 1 from then on 
 
-30 confirmations maturity for mined or staked rewards
+100 confirmations maturity for mined or staked rewards
 
 
 -------------------------
 
 Other Information
 
-- Website - http://www.lockchain.org
+- Website - http://www.lockchaincrypto.com
