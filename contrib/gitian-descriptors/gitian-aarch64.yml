@@ -1,5 +1,5 @@
 ---
-name: "lockchain-aarch64-2.1.0"
+name: "lockchain-aarch64-1.0.0"
 enable_cache: true
 suites:
 - "xenial"
@@ -26,7 +26,7 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/lockchainchain/lockchain.git"
+- "url": "https://github.com/faetos/lockchain.git"
   "dir": "lockchain"
 files: []
 script: |
