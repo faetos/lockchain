@@ -7,6 +7,7 @@ $(package)_sha256_hash=16dbfa488a21fe827dc27eaf708f42f7aa3bb997d745d31a19781628c
 
 define $(package)_set_vars
   $(package)_config_opts=--without-zlib --without-png --without-harfbuzz --without-bzip2 --disable-static
+  $(package)_config_opts += --enable-option-checking
   $(package)_config_opts_linux=--with-pic
 endef
 
@@ -21,3 +22,8 @@ endef
 define $(package)_stage_cmds
   $(MAKE) DESTDIR=$($(package)_staging_dir) install
 endef
+
+define $(package)_postprocess_cmds
+  rm lib/*.la
+endef
+
