@@ -344,7 +344,9 @@ AC_DEFUN([_BITCOIN_QT_FIND_STATIC_PLUGINS],[
      if test "x$use_pkgconfig" = xyes; then
      : dnl
      m4_ifdef([PKG_CHECK_MODULES],[
-       if test "x$TARGET_OS" = xlinux; then
+       if test x$bitcoin_cv_qt58 = xno; then
+         PKG_CHECK_MODULES([QTPLATFORM], [Qt5PlatformSupport], [QT_LIBS="$QTPLATFORM_LIBS $QT_LIBS"])
+       else if test "x$TARGET_OS" = xlinux; then
          PKG_CHECK_MODULES([QTXCBQPA], [Qt5XcbQpa], [QT_LIBS="$QTXCBQPA_LIBS $QT_LIBS"])
          PKG_CHECK_MODULES([QTFONTDATABASE], [Qt5FontDatabaseSupport], [QT_LIBS="-lQt5FontDatabaseSupport $QTFONTDATABASE_LIBS"])
          PKG_CHECK_MODULES([QTEVENTDISPATCHER], [Qt5EventDispatcherSupport], [QT_LIBS="-lQt5EventDispatcherSupport $QTEVENTDISPATCHER"])
@@ -352,9 +354,6 @@ AC_DEFUN([_BITCOIN_QT_FIND_STATIC_PLUGINS],[
          PKG_CHECK_MODULES([QTDEVICEDISCOVERY], [Qt5DeviceDiscoverySupport], [QT_LIBS="-lQt5DeviceDiscoverySupport $QTDEVICEDISCOVERY_LIBS"])
          PKG_CHECK_MODULES([QTACCESSIBILITY], [Qt5AccessibilitySupport], [QT_LIBS="-lQt5AccessibilitySupport $QTACCESSIBILITY_LIBS"])
          PKG_CHECK_MODULES([QTFB], [Qt5FbSupport], [QT_LIBS="-lQt5FbSupport $QTFB_LIBS"])
-	fi
-       if test x$bitcoin_cv_qt58 = xno; then
-         PKG_CHECK_MODULES([QTPLATFORM], [Qt5PlatformSupport], [QT_LIBS="$QTPLATFORM_LIBS $QT_LIBS"])
        else
          PKG_CHECK_MODULES([QTFONTDATABASE], [Qt5FontDatabaseSupport], [QT_LIBS="-lQt5FontDatabaseSupport $QT_LIBS"])
          PKG_CHECK_MODULES([QTEVENTDISPATCHER], [Qt5EventDispatcherSupport], [QT_LIBS="-lQt5EventDispatcherSupport $QT_LIBS"])
