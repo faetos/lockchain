@@ -1,5 +1,5 @@
 ---
-name: "lockchain-test-linux-2.1.0"
+name: "lockchain-test-linux-1.0.0"
 enable_cache: true
 distro: "ubuntu"
 suites:
@@ -23,7 +23,7 @@ packages:
 - "gperf"
 
 remotes:
-- "url": "https://github.com/lockchainchain/lockchain.git"
+- "url": "https://github.com/faetos/lockchain.git"
   "dir": "lockchain"
 files: []
 script: |
