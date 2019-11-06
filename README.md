@@ -9,7 +9,7 @@ Lock Chain is an open source blockchain project focused on storing mission criti
 
 Initial test on mining
 
-20,000 LCKC for Masternodes
+10,000 LCKC for Masternodes
 
 80,000 LCKC for Maxnodes
 
