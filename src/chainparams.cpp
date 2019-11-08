@@ -242,9 +242,9 @@ public:
         }
 
 
-        vSeeds.push_back(CDNSSeedData("dns", "dns.lochchain.org"));
-        vSeeds.push_back(CDNSSeedData("dns1", "dns1.lockchain.org"));
-        vSeeds.push_back(CDNSSeedData("dns2", "dns2.lockchain.org"));
+        vSeeds.push_back(CDNSSeedData("dns", "lock.quravo.com"));
+        //vSeeds.push_back(CDNSSeedData("dns1", "dns1.lockchain.org"));
+        //vSeeds.push_back(CDNSSeedData("dns2", "dns2.lockchain.org"));
 
 
         // LockChain addresses start with 'A or B'
