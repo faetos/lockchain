@@ -1956,8 +1956,6 @@ int64_t GetDevFeePayment(int nHeight, int64_t blockValue)
 {
 	int64_t devret = 0;
 
-	if (IsSporkActive(SPORK_20_DEVFEE)) {
-
 	if (nHeight <= 49) {
                 devret = 0;
 
@@ -1965,14 +1963,6 @@ int64_t GetDevFeePayment(int nHeight, int64_t blockValue)
                 devret = blockValue * 0.05;
         }
         return devret;
-        }
-
-        else {
-
-        devret = 0;
-
-        return devret;
-        }
 }
 
 
@@ -1998,8 +1988,6 @@ int64_t GetMaxnodePayment(int nHeight, int64_t blockValue, int nMaxnodeCount, bo
         return maxret;
         }
 
-        if (IsSporkActive(SPORK_19_MAXNODE_ACTIVATION)) {
-
         if (nHeight <= 49) {
                 maxret = 0;
 
@@ -2007,14 +1995,7 @@ int64_t GetMaxnodePayment(int nHeight, int64_t blockValue, int nMaxnodeCount, bo
                 maxret = blockValue * 0.3;
         }
         return maxret;
-        }
 
-        else {
-
-        maxret = 0;
-
-        return maxret;
-        }
 }
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZPIVStake)
@@ -2031,21 +2012,6 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     return ret;
     }
 
-    if (IsSporkActive(SPORK_18_MASTERNODE_REWARDS_CHANGE)) {
-
-    if (nHeight <= 49) {
-        ret = 0;
-    } else if (nHeight > 49) {
-        ret = blockValue * 0.4;
-    }
-
-    return ret;
-    } 
-
-    //Current pre-spork 18 change
-
-    else {
-
     if (nHeight <= 499) {
         ret = 0;
     } else if (nHeight > 499) {
@@ -2053,7 +2019,6 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     }
 
     return ret;
-    }
 
 }
 
@@ -5775,12 +5740,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         // PIVX: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
-                !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&
-                !pSporkDB->SporkExists(SPORK_16_ZEROCOIN_MAINTENANCE_MODE) &&
-		!pSporkDB->SporkExists(SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3) && 
-		!pSporkDB->SporkExists(SPORK_18_MASTERNODE_REWARDS_CHANGE) &&
-		!pSporkDB->SporkExists(SPORK_19_MAXNODE_ACTIVATION) &&
-		!pSporkDB->SporkExists(SPORK_20_DEVFEE);
+                !pSporkDB->SporkExists(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)
 
         if (fMissingSporks || !fRequestedSporksIDB){
             LogPrintf("asking peer for sporks\n");
@@ -6675,14 +6635,6 @@ int ActiveProtocol()
 {
     // SPORK_14 is used for 70913 (v3.1.0+)
     if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-
-    // SPORK_15 was used for 70912 (v3.0.5+), commented out now.
-    //if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-    //        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-    
-    // SPORK_17 was used for 71032 (v2.0.0+)
-    if (IsSporkActive(SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3))
             return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;

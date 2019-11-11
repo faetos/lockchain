@@ -3121,16 +3121,12 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
             nReward = GetBlockValue(chainActive.Height() + 1);
             nCredit += nReward;
 
-	    // Dev fee from SPORK_20_DEVFEE
-	    /**if (IsSporkActive(SPORK_20_DEVFEE)) {
-		CAmount devFeeFund = nReward * 0.05;
-	        nReward -= devFeeFund;
+	    CAmount devFeeFund = nReward * 0.05;
+	    nReward -= devFeeFund;
 
-        	CBitcoinAddress devFeeAddress(Params().DevFeeAddress());
-        	CScript payee = GetScriptForDestination(devFeeAddress.Get());
-        	txNew.vout.emplace_back(devFeeFund, payee);
-   	    }**/	
-
+            CBitcoinAddress devFeeAddress(Params().DevFeeAddress());
+            CScript payee = GetScriptForDestination(devFeeAddress.Get());
+            txNew.vout.emplace_back(devFeeFund, payee);
 
             // Create the output transaction(s)
             vector<CTxOut> vout;
