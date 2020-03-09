@@ -1,7 +1,8 @@
 package=openssl
-$(package)_version=1.0.1k
-$(package)_download_path=https://www.openssl.org/source/old
-$(package)_file_name=$(package)-$($(package)_version).tar.gz
+$(package)_version=1.0.1
+$(package)_sub_version=k
+$(package)_download_path=https://www.openssl.org/source/old/$(version)
+$(package)_file_name=$(package)-$($($(package)_version)sub_version).tar.gz
 $(package)_sha256_hash=4312b4ca1215b6f2c97007503d80db80d5157f76f8f7d3febbe6b4c56ff26739
 
 define $(package)_set_vars
